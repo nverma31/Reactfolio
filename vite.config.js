@@ -4,5 +4,5 @@ import react from "@vitejs/plugin-react";
 
 export default defineConfig({
   plugins: [react()],
-  base: "/your-repo-name/", // This will be dynamically updated by GitHub Actions
+  base: process.env.NODE_ENV === 'production' ? '/Reactfolio/' : '/',
 });

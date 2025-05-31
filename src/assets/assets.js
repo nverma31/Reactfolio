@@ -28,29 +28,19 @@ import { IoLogoGithub } from "react-icons/io";
 // Example: To change the Twitter icon, replace 'FaSquareXTwitter' with another icon.
 const footerIcons = [
   {
-    name: "x", // Social media name
-    component: FaSquareXTwitter, // Twitter icon from react-icons
-    link: "Your twitter link", // Replace with your actual Twitter URL
-  },
-  {
     name: "linkedIn", // Social media name
     component: FaLinkedin, // LinkedIn icon
     link: "Your linkedIn link", // Replace with your actual LinkedIn URL
   },
   {
-    name: "facebook",
-    component: FaFacebookSquare, // Facebook icon
-    link: "Your facebook link",
-  },
-  {
-    name: "instagram",
-    component: FaInstagramSquare, // Instagram icon
-    link: "Your instagram link",
-  },
-  {
     name: "github",
     component: IoLogoGithub, // GitHub icon
     link: "Your github link",
+  },
+  {
+    name: "x", // Social media name
+    component: FaSquareXTwitter, // Twitter icon from react-icons
+    link: "Your twitter link", // Replace with your actual Twitter URL
   },
   // You can add more icons or remove existing ones based on your social profiles.
 ];
@@ -58,7 +48,7 @@ const footerIcons = [
 // Header Text and Logo Configuration
 // 'textLogo' is used for displaying the text logo on your portfolio. You can replace it with your name.
 // 'imgLogo' is optional and can be used to show an image logo.
-const textLogo = "John Doe"; // Replace with your name or brand name
+const textLogo = "neeraj nagar"; // Replace with your name or brand name
 const imgLogo = null; // Replace with an image file if you want to use an image logo
 
 // Navigation Menu Items
@@ -73,7 +63,7 @@ const AboutPage = {
   authorDescription:
     "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt ad architecto sint quaerat necessitatibus hic voluptas odio ex quidem eaque quo dicta, corrupti, incidunt quis reiciendis aperiam maiores molestias autem?", // Short bio or description about yourself
   getInTouchUrl: "Your contact url", // URL for your contact or form page
-  authorName: "John Doe", // Replace with your name
+  authorName: "Neeraj Nagar", // Replace with your name
   profileImgTagLine: "Software Engineer @ Google", // Your tagline or job title
   authorContactMail: "johndoe@gmail.com", // Your email address
   authorContactNumber: "843-695-0671", // Your contact number (optional)
@@ -164,7 +154,7 @@ const skillsPage = [
 // You can add or remove projects as needed.
 const projectsPage = [
   {
-    projectName: "Git clone", // Project name
+    projectName: "Sixt", // Project name
     projectDescription: "lorem ipsum...", // Project description
     projectURL: "", // Optional: Project demo link (if hosted)
     githubRepositoryURL: "", // Optional: GitHub repository link
@@ -172,7 +162,7 @@ const projectsPage = [
     date: "Sep 2022 - May 2023", // Project duration
   },
   {
-    projectName: "Git clone", // Project name
+    projectName: "Tom and Polly", // Project name
     projectDescription: "lorem ipsum...", // Project description
     projectURL: "", // Optional: Project demo link (if hosted)
     githubRepositoryURL: "", // Optional: GitHub repository link
