@@ -20,5 +20,14 @@
     </script>
   </head>
   <body>
+    <script>
+      // Redirect to the correct page
+      (function() {
+        var path = window.location.pathname;
+        if (path !== '/') {
+          window.location.href = '/#' + path;
+        }
+      })();
+    </script>
   </body>
 </html> 
