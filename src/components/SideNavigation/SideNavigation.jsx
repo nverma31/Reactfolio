@@ -7,9 +7,14 @@ const SideNavigation = ({ sections }) => {
   useEffect(() => {
     const handleScroll = () => {
       const introductionSection = document.getElementById('introduction');
-      if (introductionSection) {
-        const rect = introductionSection.getBoundingClientRect();
-        setIsVisible(rect.top <= 0);
+      const moreToExploreSection = document.getElementById('more-to-explore');
+      
+      if (introductionSection && moreToExploreSection) {
+        const introRect = introductionSection.getBoundingClientRect();
+        const moreToExploreRect = moreToExploreSection.getBoundingClientRect();
+        
+        // Show navigation when introduction is in view and more-to-explore is not
+        setIsVisible(introRect.top <= 0 && moreToExploreRect.top > window.innerHeight);
       }
     };
 

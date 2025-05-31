@@ -5,6 +5,7 @@ import { MdEmail } from "react-icons/md";
 import { Link } from "react-router-dom";
 import { FaPhoneAlt } from "react-icons/fa";
 import { useState } from "react";
+import { FiDownload } from "react-icons/fi";
 
 const LinkStyles = `flex items-center gap-2 hover:text-white/65 transition-colors ease-linear`;
 
@@ -12,59 +13,25 @@ const Contact = () => {
   const [isLoading, setIsLoading] = useState(true);
   const [isProfileLoading, setIsProfileLoading] = useState(true);
   return (
-    <div id="Contact" className={`${containerStyle}`}>
-      <PageTitle title={"Contact"} />
-      <div className="flex flex-col bedar-sc2:flex-row bg-mainColor rounded-xl overflow-hidden">
-        <div className="hidden bedar-sc2:flex justify-center items-center w-1/2">
-          <img
-            src="https://saqibbedar.github.io/Portfolio/contact_image.webp"
-            onLoad={() => setIsLoading(false)}
-            className={`${isLoading ? "skeleton w-96 h-80" : ""}`}
-            alt="contact-us-image"
-          />
+    <div id="Contact" className={`${containerStyle} flex justify-center items-center`} style={{ minHeight: '90vh' }}>
+      <div className="flex flex-col items-center gap-6 py-12 px-8 text-center font-inter-tight">
+        <div className="text-3xl font-semibold leading-relaxed">
+          Thanks for the visit.<br/>
+          Reach out and let's chat.
         </div>
-        <div className="w-full bedar-sc2:w-1/2 flex flex-col items-center gap-1 py-12 px-5 text-white font-light leading-[26px] text-[18px]">
-          <img
-            onLoad={() => setIsProfileLoading(false)}
-            src={AboutPage.authorProfile}
-            className={`bg-[#beb7e0] w-36 h-36 rounded-full border-2 border-white ${
-              isProfileLoading ? "skeleton" : ""
-            }`}
-            alt="author-profile"
-          />
-          <h1 className="text-4xl bedar-sc2:text-5xl font-extrabold text-[#fedf89] my-4 text-center">
-            Contact Me
-          </h1>
-          <div className="text-center mb-4">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos autem
-            deserunt maiores quas facere quae qui perferendis iure, dolorem
-            temporibus ipsum fugit ullam eaque soluta cupiditate, eius et
-            officiis veniam.
-          </div>
-          <Link
-            to={`mailto:${AboutPage.authorContactMail}`}
-            className={LinkStyles}
-          >
-            <MdEmail className="w-6 h-6" />{" "}
-            <span>{AboutPage.authorContactMail}</span>
-          </Link>
-          <Link
-            to={`tel:${AboutPage.authorContactMail}`}
-            className={LinkStyles}
-          >
-            <FaPhoneAlt className="w-[18px] h-[18px]" />{" "}
-            <span>{AboutPage.authorContactNumber}</span>
-          </Link>
-          <div className="flex justify-center gap-2 flex-wrap mt-4">
-            {footerIcons.map(
-              ({ name, component: IconComponent, link }, index) => (
-                <Link to={link} key={index} title={name}>
-                  <IconComponent className="h-9 w-9 rounded-lg fill-zinc-400 hover:fill-white transition-colors ease-linear" />
-                </Link>
-              )
-            )}
-          </div>
-        </div>
+        <a
+          href={`mailto:${AboutPage.authorContactMail}`}
+          className="flex items-center gap-2 px-6 py-3 rounded-md font-medium border border-current hover:opacity-80 transition-opacity ease-linear font-inter-tight"
+        >
+          Email me <MdEmail className="w-5 h-5" />
+        </a>
+        <a
+          href="/resume.pdf"
+          download
+          className="flex items-center gap-2 hover:opacity-80 transition-opacity ease-linear font-inter-tight"
+        >
+          Download my resume <FiDownload className="w-5 h-5" />
+        </a>
       </div>
     </div>
   );

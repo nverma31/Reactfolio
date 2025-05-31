@@ -41,15 +41,13 @@ const Navbar = () => {
           {imgLogo ? <img src={imgLogo} alt="Logo" className="h-8 w-auto" /> : textLogo}
         </Link>
 
-        <div className="flex items-center gap-2 px-5 bedar-sc2:px-10 bedar-sc1:px-10 border rounded-full border-zinc-200 bg-[#ffffff85] backdrop-blur-[20px] backdrop-saturate-[180%]">
+        <div className="flex items-center gap-3 px-6 py-1 bedar-sc2:px-11 bedar-sc1:px-11 rounded-full bg-[#F5F1F1] backdrop-blur-[20px] backdrop-saturate-[180%]">
           <nav className="hidden bedar-sc2:flex gap-2">
             {navItems.map((item) => (
               <Link
                 key={item.path}
                 to={item.path}
-                className={`text-[1rem] font-[500] py-2 px-4 rounded-full transition-all ease-in ${
-                  location.pathname === item.path ? "bg-mainColor text-white" : ""
-                }`}
+                className={`text-[0.96rem] py-2 px-4 rounded-full transition-all ease-in hover:shadow-md hover:bg-white/30 ${location.pathname === item.path ? "font-extrabold" : ""}`}
               >
                 {item.label}
               </Link>
