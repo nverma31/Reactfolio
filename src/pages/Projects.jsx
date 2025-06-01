@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 import { IoIosArrowForward } from "react-icons/io";
 import { IoArrowBackOutline } from "react-icons/io5";
 import { useEffect, useState } from "react";
+import ProjectCard from "../components/ProjectCard.jsx";
 
 const Projects = () => {
   const [isHovered, setIsHovered] = useState(false);
@@ -37,7 +38,7 @@ const Projects = () => {
         <div id="Projects" className={`${containerStyle}`}>
           <PageTitle title={"Projects"} />
           <div>
-            <div className="grid grid-cols-1 bedar-sc2:grid-cols-2 gap-5">
+            <div className="grid grid-cols-1 gap-5">
               {projectsPage.map(
                 ({
                   projectName,
@@ -47,13 +48,10 @@ const Projects = () => {
                   tags,
                   date,
                 }) => (
-                  <Project
-                    key={1}
+                  <ProjectCard
+                    key={projectName}
                     projectName={projectName}
                     projectDescription={projectDescription}
-                    projectURL={projectURL}
-                    githubRepository={githubRepository}
-                    tags={tags}
                     date={date}
                   />
                 )

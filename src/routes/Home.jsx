@@ -1,17 +1,56 @@
 import { About, Projects, Contact } from "../pages/pages.js";
+import { useEffect, useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
+import IntroOverlay from "../components/IntroOverlay";
+import Banner from "../components/Banner";
 
 const Home = () => {
+  const [animationComplete, setAnimationComplete] = useState(false);
+  const [textColor, setTextColor] = useState("white"); // Start with white
+
+  useEffect(() => {
+    // Start with white text on top
+    setTextColor("white");
+    
+    // Change text to black after 2.85 seconds
+    const colorTimer = setTimeout(() => {
+      setTextColor("black");
+    }, 2850);
+
+    // Start overlay animation after 2 seconds
+    const overlayTimer = setTimeout(() => {
+      setAnimationComplete(true);
+    }, 2000);
+
+    return () => {
+      clearTimeout(colorTimer);
+      clearTimeout(overlayTimer);
+    };
+  }, []);
+
   return (
-    <div className="space-y-20">
-      <section id="about">
-        <About />
-      </section>
-      <section id="projects">
-        <Projects />
-      </section>
-      <section id="contact">
-        <Contact />
-      </section>
+    <div className="relative min-h-screen">
+      {/* Overlay layer with lower z-index */}
+      <div className="absolute inset-0 z-0">
+        <IntroOverlay animationComplete={animationComplete} />
+      </div>
+
+      {/* Content layer with higher z-index */}
+      <motion.div 
+        className="relative z-20 space-y-20"
+        initial={{ opacity: 1 }}
+        animate={{ opacity: 1 }}
+        style={{ color: textColor }}
+        transition={{ duration: 0.2 }}
+      >
+        <Banner />
+        <section id="projects">
+          <Projects />
+        </section>
+        <section id="contact">
+          <Contact />
+        </section>
+      </motion.div>
     </div>
   );
 };

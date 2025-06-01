@@ -38,6 +38,22 @@ export default {
         'gray-4': '#9b9b9b',
         'black': '#000000',
       },
+      lineHeight: {
+        'super-loose': '3.5',
+      },
+      animation: {
+        'gradient': 'gradient 30s ease infinite',
+      },
+      keyframes: {
+        gradient: {
+          '0%': { backgroundPosition: '0% 14%' },
+          '50%': { backgroundPosition: '100% 87%' },
+          '100%': { backgroundPosition: '0% 14%' },
+        },
+      },
+      backgroundImage: {
+        'gradient-text': 'linear-gradient(270deg, #ff5f6d, #ffc371, #c34dbf, #ff4b1f, #ff9068, #16bffd, #a84dc3, #cb3066, #4ca1af, #c4e0e5)',
+      },
     },
   },
   plugins: [],
