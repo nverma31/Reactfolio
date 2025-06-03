@@ -29,7 +29,7 @@ const FeatureSection = ({ id, title, content, features }) => {
                       alt={img.alt}
                       className="w-full h-auto"
                     />
-                    <p className="text-sm text-gray-600 mt-2 italic">{img.alt}</p>
+                    <p className="text-base md:text-lg text-gray-600 mt-3 italic font-light">{img.alt}</p>
                   </div>
                 ))}
               </div>
@@ -41,7 +41,7 @@ const FeatureSection = ({ id, title, content, features }) => {
                   alt={feature.imageAlt || feature.title}
                   className="w-full h-auto"
                 />
-                <p className="text-sm text-gray-600 mt-2 italic">{feature.imageAlt || feature.title}</p>
+                <p className="text-base md:text-lg text-gray-600 mt-3 italic font-light">{feature.imageAlt || feature.title}</p>
               </div>
             )}
           </div>

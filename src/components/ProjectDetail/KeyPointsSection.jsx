@@ -37,7 +37,7 @@ const KeyPointsSection = ({ id, title, keyPoints }) => {
           <div key={index} className="p-[2px] rounded-xl bg-gradient-to-r from-[#fedf89] via-[#ffc371] to-[#a84dc3] h-full">
             <div className="bg-gray-100 rounded-xl p-8 flex flex-col h-full">
               <div className="flex flex-col gap-4">
-                <div className="text-2xl">{getIcon(point.label)}</div>
+                <div className="text-2xl">{point.icon ? point.icon : getIcon(point.label)}</div>
                 <h3 className="text-xl font-semibold font-inter-tight leading-tight text-left">{point.heading}</h3>
                 <p className="text-gray-700 text-base md:text-lg font-light text-left">{point.description}</p>
               </div>

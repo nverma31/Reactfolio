@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 import { projectsPage } from "../assets/assets";
 import { ProjectHeader } from "../components/ProjectDetail";
 import ProjectSections from "../components/ProjectDetail/ProjectSections";
+import MoreToExplore from "../components/ProjectDetail/MoreToExplore";
 
 const ProjectDetail = () => {
   const { projectName } = useParams();
@@ -56,6 +57,7 @@ const ProjectDetail = () => {
             timeline={details.timeline}
             platform={details.platform}
             role={details.role}
+            customTitle={details.customTitle}
           />
 
           {/* Dynamic Sections */}
@@ -66,30 +68,7 @@ const ProjectDetail = () => {
       </div>
 
       {/* More to explore section */}
-      <section id="more-to-explore" className="max-w-[1800px] mx-auto px-5 bedar-sc1:px-20 mb-12">
-        <h2 className="text-center text-xl md:text-2xl font-semibold mb-8 font-inter-tight">More to explore</h2>
-        <div className="flex flex-col bedar-sc2:flex-row justify-center gap-6">
-          {/* Card 1 */}
-          <div className="flex flex-col border border-zinc-200 rounded-md p-6 w-full bedar-sc2:w-1/2">
-            <div className="text-sm font-inter-tight text-gray-500">UI/UX DESIGN</div>
-            <h3 className="text-2xl font-semibold mt-2 mb-4 font-inter-tight">I design clean experiences that your users will love.</h3>
-            <Link to="/projects" className="text-gray-1 flex items-center gap-1 hover:text-black transition-colors ease-linear font-semibold">
-              See my work <IoIosArrowForward />
-            </Link>
-            <div className="mt-6 bg-gray-300 h-48 w-full rounded-md">{/* Image Placeholder */}</div>
-          </div>
-
-          {/* Card 2 */}
-          <div className="flex flex-col border border-zinc-200 rounded-md p-6 w-full bedar-sc2:w-1/2">
-            <div className="text-sm font-inter-tight text-gray-500">WEBFLOW / FRAMER</div>
-            <h3 className="text-2xl font-semibold mt-2 mb-4 font-inter-tight">I build high quality websites at warp speed.</h3>
-            <Link to="/projects" className="text-gray-1 flex items-center gap-1 hover:text-black transition-colors ease-linear font-semibold">
-              How I help <IoIosArrowForward />
-            </Link>
-            <div className="mt-6 bg-gray-300 h-48 w-full rounded-md">{/* Image Placeholder */}</div>
-          </div>
-        </div>
-      </section>
+      <MoreToExplore projects={projectsPage.filter(p => p.projectName !== project.projectName)} />
     </>
   );
 };

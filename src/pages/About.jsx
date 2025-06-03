@@ -6,6 +6,7 @@ const {
   authorDescription,
   getInTouchUrl,
   authorName,
+  profileImgTagLine,
 } = AboutPage;
 
 const About = () => {
@@ -14,66 +15,98 @@ const About = () => {
     visible: {
       opacity: 1,
       transition: {
-        staggerChildren: 0.3,
-        delayChildren: 0.2,
+        staggerChildren: 0.2,
+        delayChildren: 0.3,
       },
     },
   };
 
   const itemVariants = {
-    hidden: { y: 20, opacity: 0 },
+    hidden: { 
+      opacity: 0,
+      y: 20,
+    },
     visible: {
-      y: 0,
       opacity: 1,
+      y: 0,
       transition: {
-        duration: 0.5,
-        ease: "easeOut",
+        duration: 0.8,
+        ease: [0.4, 0, 0.2, 1],
       },
     },
   };
 
   return (
-    <>
-      <motion.div
-        className={`flex flex-col bedar-sc1:flex-row justify-between items-center gap-6 mt-[.5rem] bedar-sc2:mt-2 min-h-screen`}
-        id="About"
-        variants={containerVariants}
-        initial="hidden"
-        animate="visible"
-      >
-        <div className="w-full bedar-sc1:w-1/2 flex flex-col gap-5">
+    <section className="min-h-screen flex flex-col justify-center py-20 px-4 md:px-8">
+      <div className="max-w-6xl mx-auto w-full">
+        <motion.div 
+          className="space-y-8 md:space-y-12"
+          variants={containerVariants}
+          initial="hidden"
+          animate="visible"
+        >
+          {/* Name and Title */}
           <motion.div 
-            className="text-3xl"
+            className="space-y-4"
             variants={itemVariants}
           >
-            Hi, I am <motion.strong 
-              className="text-[#fedf89]"
-              initial={{ opacity: 0, scale: 0.8 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{ delay: 0.5, duration: 0.5 }}
-            >{authorName}</motion.strong>
+            <h1 className="text-4xl md:text-5xl font-bold leading-tight">
+              Hi, I'm{" "}
+              <motion.span 
+                className="inline-block animate-gradient bg-clip-text text-transparent"
+                style={{
+                  backgroundImage: "linear-gradient(270deg, #ff5f6d, #ffc371, #c34dbf, #ff4b1f, #ff9068, #16bffd, #a84dc3, #cb3066, #4ca1af, #c4e0e5)",
+                  backgroundSize: "2000% 2000%"
+                }}
+              >
+                {authorName}
+              </motion.span>
+            </h1>
+            <h2 className="text-xl md:text-2xl text-gray-600 font-medium">
+              {profileImgTagLine}
+            </h2>
           </motion.div>
+
+          {/* Description */}
           <motion.div 
-            className="leading-7 text-lg"
+            className="text-lg md:text-xl leading-relaxed text-gray-700 max-w-3xl"
             variants={itemVariants}
           >
             {authorDescription}
           </motion.div>
-          <motion.div
+
+          {/* CTA Button */}
+          <motion.div 
+            className="flex gap-6"
             variants={itemVariants}
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
           >
-            <Link
-              to={getInTouchUrl}
-              className="bg-white text-textColor px-4 py-2 rounded-full w-fit hover:bg-[#fedf89] hover:text-textColor font-semibold transition-all ease-linear text-[1rem]"
+            <motion.a
+              href={getInTouchUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-6 py-3 border border-current rounded-full hover:bg-black hover:text-white transition-colors duration-300 text-center flex items-center justify-center gap-2"
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
             >
               Get In Touch
-            </Link>
+              <svg 
+                className="w-4 h-4" 
+                fill="none" 
+                stroke="currentColor" 
+                viewBox="0 0 24 24"
+              >
+                <path 
+                  strokeLinecap="round" 
+                  strokeLinejoin="round" 
+                  strokeWidth={2} 
+                  d="M12 5v14m0 0l-7-7m7 7l7-7" 
+                />
+              </svg>
+            </motion.a>
           </motion.div>
-        </div>
-      </motion.div>
-    </>
+        </motion.div>
+      </div>
+    </section>
   );
 };
 

@@ -48,7 +48,7 @@ const footerIcons = [
 // Header Text and Logo Configuration
 // 'textLogo' is used for displaying the text logo on your portfolio. You can replace it with your name.
 // 'imgLogo' is optional and can be used to show an image logo.
-const textLogo = "neeraj nagar"; // Replace with your name or brand name
+const textLogo = "NN".toUpperCase(); // Replace with your name or brand name
 const imgLogo = null; // Replace with an image file if you want to use an image logo
 
 // Navigation Menu Items
@@ -61,12 +61,12 @@ const navElements = ["About", "Education", "Skills", "Projects", "Contact"];
 const AboutPage = {
   authorProfile: "", // Your profile image link
   authorDescription:
-    "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt ad architecto sint quaerat necessitatibus hic voluptas odio ex quidem eaque quo dicta, corrupti, incidunt quis reiciendis aperiam maiores molestias autem?", // Short bio or description about yourself
-  getInTouchUrl: "Your contact url", // URL for your contact or form page
-  authorName: "Neeraj Nagar", // Replace with your name
-  profileImgTagLine: "Software Engineer @ Google", // Your tagline or job title
-  authorContactMail: "johndoe@gmail.com", // Your email address
-  authorContactNumber: "843-695-0671", // Your contact number (optional)
+    "I am a Software Engineer with a strong foundation in computer science and a passion for building innovative solutions. Currently working at Google, I specialize in developing scalable applications and contributing to impactful projects. With expertise in various programming languages and technologies, I strive to create efficient and user-friendly software solutions. I'm always eager to learn new technologies and take on challenging projects that push the boundaries of what's possible.",
+  getInTouchUrl: "https://www.linkedin.com/in/neeraj-nagar/",
+  authorName: "Neeraj Nagar",
+  profileImgTagLine: "Software Engineer @ Google",
+  authorContactMail: "neerajnagar@gmail.com",
+  authorContactNumber: "", // Optional
 };
 
 // Education Details

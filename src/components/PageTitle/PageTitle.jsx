@@ -1,8 +1,7 @@
 const PageTitle = ({title}) => {
   return (
-    <div className="flex flex-col gap-4 w-full">
-      <div className="text-2xl font-semibold">{title}</div>
-      <hr className="h-[1px] w-full bg-zinc-200 border-none" />
+    <div className="flex flex-col gap-4 w-full py-10 px-4 md:px-10">
+      <div className="text-4xl font-bold">{title}</div>
     </div>
   );
 };

@@ -13,19 +13,19 @@ const AlternatingFeatureSection = ({ id, title, content, features }) => {
             key={index} 
             className={`flex flex-col ${
               index % 2 === 0 ? 'lg:flex-row' : 'lg:flex-row-reverse'
-            } gap-8 items-center`}
+            } gap-8 items-start`}
           >
             {/* Image Column */}
             <div className="w-full lg:w-1/2">
               <img
                 src={feature.image}
                 alt={feature.imageAlt}
-                className="w-full h-auto rounded-lg shadow-lg"
+                className="w-full h-auto rounded-lg"
               />
             </div>
             
             {/* Text Column */}
-            <div className="w-full lg:w-1/2">
+            <div className="w-full lg:w-1/2 lg:pt-8">
               {feature.title && (
                 <h3 className="text-xl font-semibold mb-4 font-inter-tight">{feature.title}</h3>
               )}

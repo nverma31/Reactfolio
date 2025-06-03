@@ -5,12 +5,14 @@ const sixtShare = {
   githubRepositoryURL: "",
   tags: "Product Design, UX Research, Mobile App Design, Micro-mobility",
   date: "Dec 2021 - June 2022",
+  imageUrl: "/images/projects/sixt-share/card.png",
   details: {
     timeline: "Dec 2021 - June 2022",
     platform: "Mobile Application",
     role: "Lead Product Designer",
     heroImage: "/images/projects/sixt-share/hero.png",
     heroImageAlt: "SIXT Share Micro-mobility Integration",
+    customTitle: "Shared Micro-mobility to SIXT Share",
     sections: [
       {
         id: "introduction",
@@ -34,57 +36,89 @@ const sixtShare = {
         content: "We started with understanding the micro-mobility space by conducting a competitive benchmarking. With our improved understanding, we planned field research with users of our future micro-mobility partners to better understand their attitudes and behaviour."
       },
       {
+        id: "key-insights",
+        type: "keypoints",
+        title: "Key Insights",
+        content: [
+          {
+            label: "Use Case",
+            heading: "Mostly people use micro-mobility for the last mile.",
+            description: "Mostly people use micro-mobility for the similar use of doing the last mile. However, that is more atypical of E-scooters. Mopeds and bikes are also sometimes used for normal traveling purpose of commuting.",
+            icon: "🚲"
+          },
+          {
+            label: "Selection",
+            heading: "Price and Proximity are the key factors while choosing a vehicle.",
+            description: "People are not loyal to a particular micro-mobility partner. They look for the nearest available vehicle while thinking about the price. Even most times people are agnostic of the kind of micromobility.",
+            icon: "💸"
+          },
+          {
+            label: "Driving Behaviour",
+            heading: "People assume vehicles to be driven in the usual way.",
+            description: "Different brand have some peculiar behaviour of driving that is a real pain-point for users as they expect all of them to be unlocked, driven, parked in the similar way. People look for support when they run into these issues.",
+            icon: "🛴"
+          },
+          {
+            label: "Journey Planning",
+            heading: "People want to know where can I go, park and end.",
+            description: "Since city administrations have a lot of say in how in the operations of these vehicles. People always want to know upfront where can they drive it, park it, or end their journey. Also, want to know of fines or fees in case they didn't follow these restrictions.",
+            icon: "🗺️"
+          }
+        ]
+      },
+      {
         id: "defining-success",
         type: "introduction",
         title: "02. Defining Success",
         content: "As we were gaining a deeper understanding of both users and the micro-mobility business, we established certain guiding principles for our product, which determined the product requirements."
       },
       {
-        id: "explorations",
-        type: "feature",
-        title: "03. Explorations and Key Design Decisions",
+        id: "explorations-alternating",
+        type: "alternating-feature",
+        title: "Explorations and Key Design Decisions",
+        content: "Many aspects of the user journey required me to explore many possible design solutions. I always kept going to our goals, product requirements and principles we have defined earlier while finalising a design choice. Following are some important explorations and key design decisions:",
         features: [
           {
-            title: "03.01 – Filter chips for mobility type selection",
+            title: "Filter chips for mobility type selection",
             description: "I used filter chips that are expandable on selection and collapse on de-selection to allow users to filter the vehicles they are interested in.",
-            image: "/images/projects/sixt-share/filter-chips.png",
-            imageAlt: "Filter chips for mobility type selection"
+            image: "/images/projects/sixt-share/exp1.png",
+            imageAlt: "",
           },
           {
-            title: "03.02 – Vehicle clusters and city markers",
+            title: " Vehicle clusters and city markers at higher zoom level",
             description: "With too many partners and many vehicles, I designed vehicle clusters and new city markers to declutter and simplify the map experience.",
-            image: "/images/projects/sixt-share/vehicle-clusters.png",
-            imageAlt: "Vehicle clusters and city markers"
+            image: "/images/projects/sixt-share/exp2.png",
+            imageAlt: ""
           },
           {
-            title: "03.03 – New vehicle markers",
+            title: " New vehicle markers",
             description: "I designed new, visually distinct vehicle markers which highlight the particular mobility option to make it easier for users to identify the type.",
-            image: "/images/projects/sixt-share/vehicle-markers.png",
-            imageAlt: "New vehicle markers design"
+            image: "/images/projects/sixt-share/exp3.png",
+            imageAlt: ""
           },
           {
-            title: "03.04 – Communicating additional zones information",
+            title: "Communicating additional zones information",
             description: "With additional types of zones offered by the partners, a new color scheme along with new snackbars were added to communicate the zones better.",
-            image: "/images/projects/sixt-share/zones-info.png",
-            imageAlt: "Additional zones information display"
+            image: "/images/projects/sixt-share/exp4.png",
+            imageAlt: ""
           },
           {
-            title: "03.05 – Redesigned floating action buttons",
+            title: "Redesigned floating action buttons for map actions",
             description: "We already had three FABs for key actions, but with partners we needed more. I switched to an expandable FAB that reveals all available actions including the QR scanner.",
-            image: "/images/projects/sixt-share/fab-redesign.png",
-            imageAlt: "Redesigned floating action buttons"
+            image: "/images/projects/sixt-share/exp5.png",
+            imageAlt: ""
           },
           {
-            title: "03.06 – Direct user's attention to key journey steps",
+            title: "Direct user's attention to key journey steps",
             description: "Modal bottom sheets were used at key journey points like parking, unlocking, ending trips—since these differ across vehicle types and partners.",
-            image: "/images/projects/sixt-share/journey-steps.png",
-            imageAlt: "Key journey steps with modal bottom sheets"
+            image: "/images/projects/sixt-share/exp6.png",
+            imageAlt: ""
           },
           {
-            title: "03.07 – Interrupting the flow in critical cases",
+            title: "Interrupting the flow in critical cases",
             description: "To transparently communicate penalties or fees, modal dialogues interrupt the flow to force acknowledgment.",
-            image: "/images/projects/sixt-share/critical-cases.png",
-            imageAlt: "Critical case interruptions"
+            image: "/images/projects/sixt-share/exp7.png",
+            imageAlt: ""
           }
         ]
       },
@@ -102,34 +136,22 @@ const sixtShare = {
           {
             title: "Moped Flow",
             description: "Users can book via the map or by scanning a QR code, see onboarding, unlock using a pin, park/resume, and end the trip in designated business areas.",
-            image: "/images/projects/sixt-share/moped-flow.png",
+            image: "/images/projects/sixt-share/mopeds.png",
             imageAlt: "Moped booking and usage flow"
           },
           {
             title: "E-Scooter Flow",
             description: "A similar flow to mopeds, with differences in locking, parking, and ending highlighted using in-context action sheets.",
-            image: "/images/projects/sixt-share/scooter-flow.png",
+            image: "/images/projects/sixt-share/escooter.png",
             imageAlt: "E-Scooter booking and usage flow"
           },
           {
             title: "Bike Flow",
             description: "Mirrors the moped/e-scooter flows with tailored action sheets to explain key differences like locking/unlocking and parking.",
-            image: "/images/projects/sixt-share/bike-flow.png",
+            image: "/images/projects/sixt-share/bikes.png",
             imageAlt: "Bike booking and usage flow"
           }
         ]
-      },
-      {
-        id: "interaction-design",
-        type: "introduction",
-        title: "Immersion with Interaction Design",
-        content: "In line with creating a feel for the real vehicles, we used motion design to immerse users and help them experience what it's like."
-      },
-      {
-        id: "responsive-design",
-        type: "introduction",
-        title: "Map Selection and Unlock",
-        content: "Everything was designed responsively, with consistent visuals and behavior across all viewports."
       },
       {
         id: "impact",
@@ -138,27 +160,54 @@ const sixtShare = {
         content: [
           {
             label: "Market Expansion",
-            value: "Europe-wide",
-            subtitle: "Expanded footprint",
-            description: "From Germany and Netherlands to multiple European cities",
+            value: "6 countries",
+            subtitle: "with own or partner vehicles",
+            description: "From just Germany and Netherlands to 6 countries in Eruope with a total of 21 European cities",
             bgColor: "bg-blue-200",
             textColor: "text-blue-800"
           },
           {
             label: "User Growth",
-            value: "Increased",
-            subtitle: "Monthly Active Users",
-            description: "Higher engagement and retention",
+            value: "72%",
+            subtitle: "increase monthly active users",
+            description: "We saw 72% increase in Monthly Active Users YOY after the launch of the micro-mobility.",
             bgColor: "bg-green-200",
             textColor: "text-green-800"
           },
           {
-            label: "Revenue",
-            value: "Growth",
-            subtitle: "Business impact",
-            description: "Increased transactions and revenue",
+            label: "Business Impact",
+            value: "15%",
+            subtitle: "Revenue increase",
+            description: "We saw a 15% increase in revenue YOY after the launch of the micro-mobility.",
             bgColor: "bg-purple-200",
             textColor: "text-purple-800"
+          }
+        ]
+      },
+      {
+        id: "learnings",
+        type: "learnings",
+        title: "Learnings",
+        content: [
+          {
+            title: "User Education is Critical",
+            description: "Clear onboarding and contextual guidance are essential when introducing new mobility options and partners to ensure users feel confident and avoid confusion."
+          },
+          {
+            title: "Consistency Drives Trust",
+            description: "A unified experience across all vehicle types and partners helps build user trust and reduces friction in the journey."
+          },
+          {
+            title: "Flexibility Increases Engagement",
+            description: "Allowing users to choose from a variety of vehicles and partners increases engagement and broadens the customer base."
+          },
+          {
+            title: "Transparent Communication Reduces Support Load",
+            description: "Proactively communicating rules, zones, and fees reduces user frustration and the need for customer support interventions."
+          },
+          {
+            title: "Iterative Design is Key",
+            description: "Continuous testing and iteration with real users is vital to refine flows and address pain points unique to micro-mobility."
           }
         ]
       }

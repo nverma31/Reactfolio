@@ -42,7 +42,7 @@ export default {
         'super-loose': '3.5',
       },
       animation: {
-        'gradient': 'gradient 30s ease infinite',
+        'gradient': 'gradient 6s ease infinite',
       },
       keyframes: {
         gradient: {

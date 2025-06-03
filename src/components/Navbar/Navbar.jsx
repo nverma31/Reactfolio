@@ -1,4 +1,4 @@
-import { Link, useLocation } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { imgLogo, textLogo } from "../../assets/assets";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { IoClose } from "react-icons/io5";
@@ -7,12 +7,37 @@ import { useEffect, useState } from "react";
 const Navbar = () => {
   const [isMenuHidden, setIsMenuHidden] = useState(true);
   const location = useLocation();
+  const navigate = useNavigate();
+
+  const scrollToSection = (sectionId) => {
+    const section = document.getElementById(sectionId);
+    if (section) {
+      const offset = 100; // Adjust based on your header height
+      const elementPosition = section.getBoundingClientRect().top;
+      const offsetPosition = elementPosition + window.pageYOffset - offset;
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: 'smooth'
+      });
+    }
+  };
+
+  const handleSectionClick = (sectionId) => {
+    if (location.pathname !== '/') {
+      navigate('/');
+      // Wait for navigation to complete before scrolling
+      setTimeout(() => {
+        scrollToSection(sectionId);
+      }, 100);
+    } else {
+      scrollToSection(sectionId);
+    }
+  };
 
   const navItems = [
     { path: "/", label: "Home" },
-    { path: "/about", label: "About" },
-    { path: "/projects", label: "Projects" },
-    { path: "/contact", label: "Contact" }
+    { path: "/", label: "Projects", onClick: () => handleSectionClick('projects') },
+    { path: "/", label: "Contact", onClick: () => handleSectionClick('Contact') }
   ];
 
   useEffect(() => {
@@ -37,20 +62,30 @@ const Navbar = () => {
   return (
     <div className="fixed w-full left-0 top-0 px-5 bedar-sc1:px-10 py-4 z-50">
       <div className="flex items-center justify-between">
-        <Link to="/" className="text-base bedar-sc2:text-lg font-bold py-3 bedar-sc2:py-4 bedar-sc1:py-5 select-none whitespace-nowrap lowercase">
+        <Link to="/" className="text-xl bedar-sc2:text-2xl font-['Libre_Baskerville'] font-regular py-3 bedar-sc2:py-4 bedar-sc1:py-5 select-none whitespace-nowrap pl-8">
           {imgLogo ? <img src={imgLogo} alt="Logo" className="h-8 w-auto" /> : textLogo}
         </Link>
 
         <div className="flex items-center gap-3 px-6 py-1 bedar-sc2:px-11 bedar-sc1:px-11 rounded-full bg-[#F5F1F1] backdrop-blur-[20px] backdrop-saturate-[180%]">
           <nav className="hidden bedar-sc2:flex gap-2">
             {navItems.map((item) => (
-              <Link
-                key={item.path}
-                to={item.path}
-                className={`text-[0.96rem] py-2 px-4 rounded-full transition-all ease-in hover:shadow-md hover:bg-white/30 ${location.pathname === item.path ? "font-extrabold" : ""}`}
-              >
-                {item.label}
-              </Link>
+              item.onClick ? (
+                <button
+                  key={item.path}
+                  onClick={item.onClick}
+                  className="text-[0.96rem] py-2 px-4 rounded-full transition-all ease-in hover:shadow-md hover:bg-white/30"
+                >
+                  {item.label}
+                </button>
+              ) : (
+                <Link
+                  key={item.path}
+                  to={item.path}
+                  className={`text-[0.96rem] py-2 px-4 rounded-full transition-all ease-in hover:shadow-md hover:bg-white/30 ${location.pathname === item.path ? "font-extrabold" : ""}`}
+                >
+                  {item.label}
+                </Link>
+              )
             ))}
           </nav>
 
@@ -73,16 +108,29 @@ const Navbar = () => {
         }`}
       >
         {navItems.map((item) => (
-          <Link
-            key={item.path}
-            to={item.path}
-            className={`border border-zinc-200 px-12 py-2 text-center rounded-md cursor-pointer ${
-              location.pathname === item.path ? "bg-mainColor text-white" : "bg-white"
-            }`}
-            onClick={() => setIsMenuHidden(true)}
-          >
-            {item.label}
-          </Link>
+          item.onClick ? (
+            <button
+              key={item.path}
+              onClick={(e) => {
+                item.onClick();
+                setIsMenuHidden(true);
+              }}
+              className="border border-zinc-200 px-12 py-2 text-center rounded-md cursor-pointer bg-white"
+            >
+              {item.label}
+            </button>
+          ) : (
+            <Link
+              key={item.path}
+              to={item.path}
+              className={`border border-zinc-200 px-12 py-2 text-center rounded-md cursor-pointer ${
+                location.pathname === item.path ? "bg-mainColor text-white" : "bg-white"
+              }`}
+              onClick={() => setIsMenuHidden(true)}
+            >
+              {item.label}
+            </Link>
+          )
         ))}
       </div>
     </div>

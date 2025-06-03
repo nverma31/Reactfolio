@@ -42,12 +42,16 @@ const Banner = () => {
             className="text-xl md:text-2xl font-bold leading-tight md:max-w-xl lg:max-w-2xl"
             variants={itemVariants}
           >
-            Hi, I'm a senior product designer based in Munich, currently working at&nbsp;
+            Hi! I'm Neeraj, a senior product designer based in Munich, currently working at&nbsp;
             <a 
-              href="https://www.sixt.com/betahome/#/" 
-              className="inline-block animate-gradient bg-gradient-to-r from-[#ff5f6d] via-[#ffc371] via-[#c34dbf] via-[#ff4b1f] via-[#ff9068] via-[#16bffd] via-[#a84dc3] via-[#cb3066] via-[#4ca1af] to-[#c4e0e5] bg-[length:2000%_2000%] bg-clip-text text-transparent"
+              href="https://www.clark.io/" 
+              className="inline-block animate-gradient bg-clip-text text-transparent"
+              style={{
+                backgroundImage: "linear-gradient(270deg, #ff5f6d, #ffc371, #c34dbf, #ff4b1f, #ff9068, #16bffd, #a84dc3, #cb3066, #4ca1af, #c4e0e5)",
+                backgroundSize: "2000% 2000%"
+              }}
             >
-              SIXT.
+              CLARK.
             </a>
           </motion.h2>
           
@@ -64,38 +68,40 @@ const Banner = () => {
             className="flex flex-col md:flex-row gap-6 mt-8"
             variants={itemVariants}
           >
-            <motion.a
-              href="https://drive.google.com/file/d/175BR-KYdM6q_lGjCnxNIqBzjSgiioKJ7/view?usp=sharing"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="px-6 py-3 bg-white text-black rounded-full hover:bg-gray-100 transition-colors duration-300 text-center"
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-            >
-              Resume
-            </motion.a>
-            
-            <motion.a
-              href="/"
-              className="px-6 py-3 border border-current rounded-full hover:bg-white hover:text-black transition-colors duration-300 text-center flex items-center justify-center gap-2"
+            <motion.button
+              onClick={() => {
+                const projectsSection = document.getElementById('projects');
+                if (projectsSection) {
+                  projectsSection.scrollIntoView({ behavior: 'smooth' });
+                }
+              }}
+              className="px-6 py-3 border border-current rounded-full hover:bg-black hover:text-white transition-colors duration-300 text-center flex items-center justify-center gap-2"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
               Case studies
-              <svg 
+              <motion.svg 
                 className="w-4 h-4" 
                 fill="none" 
                 stroke="currentColor" 
                 viewBox="0 0 24 24"
+                animate={{
+                  y: [0, 4, 0],
+                }}
+                transition={{
+                  duration: 1.5,
+                  repeat: Infinity,
+                  ease: "easeInOut"
+                }}
               >
                 <path 
                   strokeLinecap="round" 
                   strokeLinejoin="round" 
                   strokeWidth={2} 
-                  d="M14 5l7 7m0 0l-7 7m7-7H3" 
+                  d="M12 5v14m0 0l-7-7m7 7l7-7" 
                 />
-              </svg>
-            </motion.a>
+              </motion.svg>
+            </motion.button>
           </motion.div>
         </motion.div>
       </div>

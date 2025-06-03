@@ -5,12 +5,14 @@ const audiModelPages = {
   githubRepositoryURL: "",
   tags: "Product Design, UX Research, Web Design, Automotive",
   date: "Jan 2020 - Dec 2020",
+  imageUrl: "/images/projects/audi/card.png",
   details: {
     timeline: "Jan 2020 - Dec 2020",
     platform: "Web Application",
     role: "Senior Product Designer",
     heroImage: "/images/projects/audi/hero.png",
     heroImageAlt: "Audi Model Pages Redesign",
+    customTitle: "Audi Model Pages - Redesigning the Digital Showroom Experience",
     sections: [
       {
         id: "introduction",
@@ -18,7 +20,6 @@ const audiModelPages = {
         title: "Introduction",
         content: [
           "The Audi model pages project aimed to revolutionize how potential customers explore and learn about Audi's vehicle lineup. The goal was to create an immersive, informative experience that would help users make informed decisions about their next car purchase.",
-          "The redesign focused on creating a more engaging visual experience while maintaining clear information hierarchy and improving the overall user journey."
         ]
       },
       {
@@ -43,18 +44,29 @@ const audiModelPages = {
       },
       {
         id: "information-architecture",
-        type: "image",
+        type: "feature",
         title: "Information Architecture",
-        description: "We redesigned the IA around user needs uncovered during research. The goal was a simple, modular structure that could adapt to different types of car models and user expectations. This informed both system architecture and content strategy.",
-        image: "/images/projects/audi/userjourney.png",
-        imageAlt: "User research process showing interviews, diary studies, and journey mapping"
+        features: [
+          {
+            title: "",
+             description: "We focused on a simple Information Architecture that was based on user needs identified in research. We reimagined how the model page will fit in with whole Audi website and also how the model page itself needs to be modular depending on the different kinds of cars and people's expectations towards those cars. This also allowed us to give requirements to the content team and developers to start working on the system architecture..",
+            image: "/images/projects/audi/ia.png",
+            imageAlt: "Main navigation structure showing vehicle categories and hierarchy"
+          },
+          {
+            title: "",
+            description: "",
+            image: "/images/projects/audi/modularIA.png",
+            imageAlt: "Content model showing relationships between different vehicle information modules"
+          }
+        ]
       },
       {
         id: "visual",
         type: "image",
         title: "Visual design and brand consistency",
         description: "The visual identity reflected Audi's premium feel. We used a black-and-white color scheme, clean line graphics, and subtle animations to avoid information overload and establish elegance. Custom iconography helped users navigate clearly and quickly.",
-        image: "/images/projects/audi/userjourney.png",
+        image: "/images/projects/audi/styles.png",
         imageAlt: "User research process showing interviews, diary studies, and journey mapping"
       },
       {
@@ -62,7 +74,7 @@ const audiModelPages = {
         type: "image",
         title: "Iterative Development of Scalable Modules",
         description: "We designed and refined scalable content modules for different vehicle types. The main challenge was balancing technical/content constraints with editorial flexibility and user experience.",
-        image: "/images/projects/audi/userjourney.png",
+        image: "/images/projects/audi/modules.png",
         imageAlt: "User research process showing interviews, diary studies, and journey mapping"
       },
       {
@@ -97,8 +109,8 @@ const audiModelPages = {
         type: "image",
         title: "The new Model pages",
         description: "The redesigned pages helps users make confident buying decisions. We designed and refined scalable content modules for different vehicle types. The main challenge was balancing technical/content constraints with editorial flexibility and user experience. Immersive content modules simulate the experience of interacting with the physical car.",
-        image: "/images/projects/audi/userjourney.png",
-        imageAlt: "User research process showing interviews, diary studies, and journey mapping"
+        image: "/images/projects/audi/variations.jpg",
+        imageAlt: "New Audi model page design showing immersive content modules and interactive features"
       },
       {
         id: "learnings",

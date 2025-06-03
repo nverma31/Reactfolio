@@ -5,17 +5,21 @@ const coverageInsights = {
   githubRepositoryURL: "",
   tags: "Node.js, React.js, PostgreSQL, GraphQL",
   date: "Jan 2023 - Present",
+  imageUrl: "/images/projects/coverage-insights/cardimage.png",
   details: {
-    timeline: "Jan 2023 - Present",
-    platform: "Web Application",
-    role: "Frontend Developer",
+    timeline: "Oct 2024 - Present",
+    platform: "Mobile Application",
+    role: "Senior Product designer",
+    heroImage: "/images/projects/coverage-insights/hero.png",
+    heroImageAlt: "Coverage Insights Platform Overview",
+    customTitle: "Coverage Insights - Personalized Insurance Recommendations",
     sections: [
       {
         id: "introduction",
         type: "introduction",
         title: "Introduction",
         content: [
-          "Tom and Polly are a UK-based company specializing in life insurance for Mums and Dads. ",
+          "Tom and Polly are a UK-based company specializing in insurances for Mums and Dads. ",
           "This case study details the strategic design and implementation of a sophisticated in-app recommendations engine for the Tom and Polly mobile applications."
         ]
       },
@@ -31,7 +35,7 @@ const coverageInsights = {
         id: "problem",
         type: "introduction",
         title: "Problem",
-        content: "Initially, the Tom and Polly apps were mere document viewers, failing to inform users about other relevant insurance, which stunted business growth and didn't proactively aid users. The core challenge was to evolve them into proactive, trustworthy platforms for personalized insurance recommendations, respecting the distinct Tom and Polly brand identities."
+        content: "Initially, the Tom and Polly apps were seen merely as policy management apps for your life insurance that you bought with Tom and Polly. This was failing to inform users about other relevant insurance, which stunted business growth and didn't proactively aid users. The core challenge was to evolve them into proactive, trustworthy platforms for personalized insurance recommendations, respecting the distinct Tom and Polly brand identities."
       },
       {
         id: "problem-callout",
@@ -85,7 +89,7 @@ const coverageInsights = {
         id: "vision-callout",
         type: "callout",
         title: "Enhanced Financial Protection",
-        content: "Our vision for the app recommendations was to **significantly increase the cross-sell rate** of additional insurance products to existing life insurance customers. We aimed to transform the apps into proactive platforms for financial protection discovery and provide more holistic and personalized value to our customers."
+        content: "Our vision for the app recommendations was to significantly increase the cross-sell rate of additional insurance products to existing life insurance customers. We aimed to transform the apps into proactive platforms for financial protection discovery and provide more holistic and personalized value to our customers."
       },
       {
         id: "process",
@@ -94,7 +98,7 @@ const coverageInsights = {
         features: [
           {
             title: "Starting with Speed and Collaboration",
-            description: "We began with rapid prototyping and close collaboration between design, product, and engineering teams to ensure quick iterations and alignment on goals."
+            description: "We began with rapid prototyping and close collaboration between design, product, and engineering teams to ensure quick iterations and alignment on goals. Since, we needed to create a new recommendation engine, there was constant alignment with the data engineering team to ensure we were using the right data and that we were using it in the right way."
           },
           {
             title: "Iteration and Validation",
@@ -106,33 +110,40 @@ const coverageInsights = {
               },
               {
                 src: "/images/projects/coverage-insights/abtest.png",
-                alt: "One of the A/B tests we did to test different designs"
+                alt: "One of the A/B tests we did to test different designs. The right one performed 50% better."
               }
             ]
           },
           {
             title: "Adapting Content and Brand Specification",
             description: "We carefully crafted category pages and implemented brand-specific changes to ensure the recommendations felt native to each brand's identity while maintaining consistency in the user experience.",
-            image: "/images/projects/coverage-insights/branding.png",
-            imageAlt: "Category pages and branding changes"
+            image: "/images/projects/coverage-insights/content.png",
+            imageAlt: "Each insurance category page needed to be tailored to the brand's identity and tone of voice."
           }
         ]
       },
       {
         id: "final-designs",
-        type: "feature",
+        type: "alternating-feature",
         title: "Final Designs",
+        content: "Our final designs focused on creating an intuitive and personalized experience for users to discover and understand their insurance needs.",
         features: [
           {
-            title: "Personalized Insurance Recommendations",
-            description: "Our AI-powered recommendation engine analyzes user profiles and life stages to suggest the most relevant insurance products. The system continuously learns from user interactions to improve its suggestions over time.",
-            image: "/images/projects/coverage-insights/recommendations.png",
+            title: "Coverage Insights in Home Screen",
+            description: "The coverage insights tells the users what they are covered for and what they should get to achieve financial security and peace of mind. We started with categorising information based on insurance types but later evolved to needs based categorisation.",
+            image: "/images/projects/coverage-insights/homenew.png",
             imageAlt: "Coverage Insights Recommendations Interface"
           },
           {
-            title: "Smart Life Stage Detection",
-            description: "The platform automatically identifies key life events and stages to proactively suggest relevant insurance products. This ensures users are always protected with the right coverage at the right time.",
-            image: "/images/projects/coverage-insights/home.png",
+            title: "Insights details page",
+            description: "Here user can see the details of the coverage insights and get more information about the insurance products that are recommended.",
+            image: "/images/projects/coverage-insights/insightsold.png",
+            imageAlt: "Coverage Insights Life Stage Detection"
+          },
+          {
+            title: "Insurance category details page",
+            description: "These pages informs the users about the what that insurance is all about and how it can benefit them.",
+            image: "/images/projects/coverage-insights/categorynew.png",
             imageAlt: "Coverage Insights Life Stage Detection"
           }
         ]
@@ -143,10 +154,37 @@ const coverageInsights = {
         title: "Final Refinement",
         features: [
           {
-            title: "Refined Recommendation Engine",
-            description: "After multiple rounds of user testing and feedback, we refined the recommendation engine to ensure it provided clear, actionable insights while maintaining a personalized touch that resonated with our users.",
-            image: "/images/projects/coverage-insights/home.png",
-            imageAlt: "Coverage Insights Refined Interface"
+            title: "Life stages based coverage insights",
+            description: " We introduced insurance suggestions can vary depending on where you are in life to make it more personal. We staretd with four key life stages for our core user demographics - Independent, Young family, Next chapter, Growing family.",
+            image: "/images/projects/coverage-insights/lifestages.png",
+            imageAlt: "Life stages based coverage insights for Polly"
+          }
+        ]
+      },
+      {
+        id: "learnings",
+        type: "learnings",
+        title: "Learnings",
+        content: [
+          {
+            title: "Personalization Drives Value",
+            description: "Tailoring recommendations to user life stages and needs significantly increases engagement and perceived value."
+          },
+          {
+            title: "Trust is Earned Through Transparency",
+            description: "Clear communication about why products are recommended and how data is used builds user trust."
+          },
+          {
+            title: "Simplicity Wins",
+            description: "Reducing complexity in both UI and product explanations helps users make confident decisions."
+          },
+          {
+            title: "Continuous Feedback Improves Outcomes",
+            description: "Regular user testing and feedback loops are essential for refining recommendations and user flows."
+          },
+          {
+            title: "Brand Consistency Matters",
+            description: "Adapting the experience to each brand's tone and style increases user comfort and adoption."
           }
         ]
       },

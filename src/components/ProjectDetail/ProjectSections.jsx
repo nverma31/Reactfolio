@@ -11,6 +11,7 @@ import KeyPointsSection from './KeyPointsSection';
 import ImpactSection from './ImpactSection';
 import FeatureSection from './FeatureSection';
 import AlternatingFeatureSection from './AlternatingFeatureSection';
+import PrincipleRequirementsSection from './PrincipleRequirementsSection';
 
 const ProjectSections = ({ sections }) => {
   const renderSection = (section) => {
@@ -117,10 +118,11 @@ const ProjectSections = ({ sections }) => {
 
   return (
     <div className="w-full">
-      {sections.map((section) => (
-        <div key={`section-${section.id || section.title}`}>
+      {sections.map((section, idx) => (
+        <React.Fragment key={`section-${section.id || section.title}`}>
           {renderSection(section)}
-        </div>
+          {section.id === 'defining-success' && <PrincipleRequirementsSection />}
+        </React.Fragment>
       ))}
     </div>
   );
