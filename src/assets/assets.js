@@ -149,28 +149,8 @@ const skillsPage = [
   FaYoutube,
 ];
 
-// Projects Section
-// Replace the dummy project data with your actual projects.
-// You can add or remove projects as needed.
-const projectsPage = [
-  {
-    projectName: "Sixt", // Project name
-    projectDescription: "lorem ipsum...", // Project description
-    projectURL: "", // Optional: Project demo link (if hosted)
-    githubRepositoryURL: "", // Optional: GitHub repository link
-    tags: "Flask, React.js, MongoDB, Rest API", // Tech stack used in the project
-    date: "Sep 2022 - May 2023", // Project duration
-  },
-  {
-    projectName: "Tom and Polly", // Project name
-    projectDescription: "lorem ipsum...", // Project description
-    projectURL: "", // Optional: Project demo link (if hosted)
-    githubRepositoryURL: "", // Optional: GitHub repository link
-    tags: "Flask, React.js, MongoDB, Rest API", // Tech stack used in the project
-    date: "Sep 2022 - May 2023", // Project duration
-  },
-  // Add more projects or remove the ones you don't need
-];
+// Import projects from the new structure
+import projects from '../data/projects';
 
 // Exporting all components for use in other parts of the application
 export {
@@ -181,6 +161,6 @@ export {
   footerIcons,
   EducationPage,
   skillsPage,
-  projectsPage,
+  projects as projectsPage,
   CertificatesPage,
 };

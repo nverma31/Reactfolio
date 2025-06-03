@@ -11,20 +11,16 @@ const Project = ({
   tags,
   date,
 }) => {
-    // Create a URL-friendly slug from the project name
-    const projectSlug = projectName.toLowerCase().replace(/\s+/g, '-');
-
     return (
       // Wrap the entire project card div with a Link
-      <Link to={`/projects/${projectSlug}`} className="block">
+      <Link to={`/projects/${projectName}`} className="block">
         <div className="flex flex-col bg-mainColor text-white p-5 bedar-sc2:p-8 rounded-md border shadow h-full">
           <FaFolderOpen className="w-6 h-6" />
           <strong className="mt-5 mb-2 text-2xl text-[#fedf89]">
             {projectName}
           </strong>
-          <div className="mb-2 flex-grow">{projectDescription}</div> {/* Added flex-grow to push footer down */}
+          <div className="mb-2 flex-grow">{projectDescription}</div>
           <div>{tags}</div>
-          {/* Keep the links for live demo and source code inside but ensure they are still clickable */}
           <div className="flex items-center justify-between mt-10">
             <div>{date}</div>
             <div className="flex gap-2">

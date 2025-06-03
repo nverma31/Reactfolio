@@ -44,14 +44,30 @@ const SideNavigation = ({ sections }) => {
     return () => observer.disconnect();
   }, [sections]);
 
+  const handleClick = (e, id) => {
+    e.preventDefault();
+    const element = document.getElementById(id);
+    if (element) {
+      const offset = 100; // Adjust this value based on your header height
+      const elementPosition = element.getBoundingClientRect().top;
+      const offsetPosition = elementPosition + window.pageYOffset - offset;
+
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: 'smooth'
+      });
+    }
+  };
+
   return (
-    <div className={`hidden lg:block fixed top-24 left-8 max-h-[calc(100vh-12rem)] w-64 p-4 bg-[#FCFBF8] overflow-y-auto transition-opacity duration-200 ease-in-out ${isVisible ? 'opacity-100' : 'opacity-0 pointer-events-none'}`}>
+    <div className={`hidden lg:block fixed top-24 left-8 max-h-[calc(100vh-12rem)] w-52 p-4 bg-[#FCFBF8] overflow-y-auto transition-opacity duration-200 ease-in-out ${isVisible ? 'opacity-100' : 'opacity-0 pointer-events-none'}`}>
       <nav>
         <ul>
           {sections.map((section) => (
             <li key={section.id} className="mb-2">
               <a 
                 href={`#${section.id}`} 
+                onClick={(e) => handleClick(e, section.id)}
                 className={`transition-colors duration-200 ${
                   activeSection === section.id 
                     ? 'text-black font-medium' 

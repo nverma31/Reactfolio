@@ -38,7 +38,7 @@ const Projects = () => {
         <div id="Projects" className={`${containerStyle}`}>
           <PageTitle title={"Projects"} />
           <div>
-            <div className="grid grid-cols-1 gap-5">
+            <div className="grid grid-cols-1 gap-5 md:pl-8 lg:pl-12">
               {projectsPage.map(
                 ({
                   projectName,
@@ -47,12 +47,14 @@ const Projects = () => {
                   githubRepository,
                   tags,
                   date,
+                  urlId,
                 }) => (
                   <ProjectCard
                     key={projectName}
                     projectName={projectName}
                     projectDescription={projectDescription}
                     date={date}
+                    urlId={urlId}
                   />
                 )
               )}
