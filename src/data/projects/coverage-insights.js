@@ -1,10 +1,10 @@
 const coverageInsights = {
   projectName: "Coverage Insights",
-  projectDescription: "An innovative e-commerce platform specializing in sustainable fashion. The platform connects eco-conscious consumers with sustainable fashion brands.",
+  projectDescription: "Strategic design and implementation of a sophisticated in-app recommendations engine for the Tom and Polly mobile applications.",
   projectURL: "",
   githubRepositoryURL: "",
   tags: "Node.js, React.js, PostgreSQL, GraphQL",
-  date: "Jan 2023 - Present",
+  date: "Oct 2024 - Present",
   imageUrl: "/images/projects/coverage-insights/cardimage.png",
   details: {
     timeline: "Oct 2024 - Present",

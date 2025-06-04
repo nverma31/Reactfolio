@@ -1,6 +1,6 @@
 const sixtShare = {
   projectName: "SIXT Share",
-  projectDescription: "Adding Shared Micro-mobility to SIXT Share - Integrating shared micro-mobility partners within SIXT share with a focus on increasing customer engagement and retention.",
+  projectDescription: "Integrating shared micro-mobility partners within SIXT share with a focus on increasing customer engagement and retention.",
   projectURL: "",
   githubRepositoryURL: "",
   tags: "Product Design, UX Research, Mobile App Design, Micro-mobility",

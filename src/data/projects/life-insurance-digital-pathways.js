@@ -1,13 +1,12 @@
 const lifeInsuranceDigitalPathways = {
   projectName: "Life Insurance Digital Pathways",
-  projectDescription: "A transformative digital platform revolutionizing the life insurance industry by streamlining policy management, claims processing, and customer engagement through innovative digital solutions.",
-  projectURL: "",
+  projectDescription: "A transformative digital life insurance buying journey for UK moms and dads.",
   githubRepositoryURL: "",
   tags: "React.js, Node.js, AWS, GraphQL",
-  date: "Oct 2024 - Present",
+  date: "Oct 2024 - Feb 2025",
   imageUrl: "/images/projects/digitalpathways/cardimage2.png",
   details: {
-    timeline: "Oct 2024 - Present",
+    timeline: "Oct 2024 - Feb 2025",
     platform: "Web Application",
     role: "Senior Product Designer",
     heroImage: "/images/projects/digitalpathways/hero.png",

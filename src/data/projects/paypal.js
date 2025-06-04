@@ -1,7 +1,7 @@
 const paypal = {
   projectName: "Rebooting PayPal",
   urlId: "paypal",
-  projectDescription: "Rebooting PayPal - Reimagining the web-based PayPal experience to create a seamless and consistent multi-channel, user-centric journey.",
+  projectDescription: "Rebooting PayPal - Reimagining the PayPal's app and web experience to create a seamless and consistent multi-channel, user-centric journey.",
   projectURL: "",
   githubRepositoryURL: "",
   tags: "Software Engineering, Product Design, Web Development, Mobile App Development",
