@@ -60,7 +60,9 @@ const Home = () => {
         style={{ color: textColor }}
         transition={{ duration: 0.2 }}
       >
-        <Banner />
+        <section id="home">
+          <Banner />
+        </section>
         <section id="projects">
           <Projects />
         </section>

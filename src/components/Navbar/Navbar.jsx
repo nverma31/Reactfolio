@@ -35,9 +35,24 @@ const Navbar = () => {
   };
 
   const navItems = [
-    { path: "/", label: "Home" },
-    { path: "/", label: "Projects", onClick: () => handleSectionClick('projects') },
-    { path: "/", label: "Contact", onClick: () => handleSectionClick('Contact') }
+    { 
+      path: "/", 
+      label: "Home", 
+      onClick: () => handleSectionClick('home'),
+      isActive: location.pathname === '/'
+    },
+    { 
+      path: "/", 
+      label: "Projects", 
+      onClick: () => handleSectionClick('projects'),
+      isActive: location.pathname === '/' && window.location.hash === '#projects'
+    },
+    { 
+      path: "/", 
+      label: "Contact", 
+      onClick: () => handleSectionClick('Contact'),
+      isActive: location.pathname === '/' && window.location.hash === '#contact'
+    }
   ];
 
   useEffect(() => {
@@ -69,25 +84,15 @@ const Navbar = () => {
         <div className="flex items-center gap-3 px-6 py-1.5 bedar-sc2:px-11 bedar-sc1:px-11 rounded-full bg-gradient-to-r from-gray-100/90 to-gray-200/90 backdrop-blur-[10px] backdrop-saturate-[180%] border border-gray-200/30 shadow-lg shadow-black/5">
           <nav className="hidden bedar-sc2:flex gap-3">
             {navItems.map((item) => (
-              item.onClick ? (
-                <button
-                  key={item.path}
-                  onClick={item.onClick}
-                  className="text-[0.96rem] font-inter py-2 px-4 rounded-full transition-all duration-300 ease-in-out hover:bg-white/20 hover:scale-105 active:scale-95 text-gray-700"
-                >
-                  {item.label}
-                </button>
-              ) : (
-                <Link
-                  key={item.path}
-                  to={item.path}
-                  className={`text-[0.96rem] font-inter py-2 px-4 rounded-full transition-all duration-300 ease-in-out hover:bg-white/20 hover:scale-105 active:scale-95 text-gray-700 ${
-                    location.pathname === item.path ? "font-bold" : ""
-                  }`}
-                >
-                  {item.label}
-                </Link>
-              )
+              <button
+                key={item.path}
+                onClick={item.onClick}
+                className={`text-[0.96rem] font-inter py-2 px-4 rounded-full transition-all duration-300 ease-in-out hover:bg-white/20 hover:scale-105 active:scale-95 text-gray-700 ${
+                  item.isActive ? "font-bold" : ""
+                }`}
+              >
+                {item.label}
+              </button>
             ))}
           </nav>
 
@@ -110,31 +115,20 @@ const Navbar = () => {
         }`}
       >
         {navItems.map((item) => (
-          item.onClick ? (
-            <button
-              key={item.path}
-              onClick={(e) => {
-                item.onClick();
-                setIsMenuHidden(true);
-              }}
-              className="px-12 py-2.5 text-center rounded-lg cursor-pointer hover:bg-white/20 transition-all duration-300 ease-in-out hover:scale-[1.02] active:scale-[0.98] text-gray-700 font-inter"
-            >
-              {item.label}
-            </button>
-          ) : (
-            <Link
-              key={item.path}
-              to={item.path}
-              className={`px-12 py-2.5 text-center rounded-lg cursor-pointer transition-all duration-300 ease-in-out hover:scale-[1.02] active:scale-[0.98] text-gray-700 font-inter ${
-                location.pathname === item.path 
-                  ? "font-bold" 
-                  : "hover:bg-white/20"
-              }`}
-              onClick={() => setIsMenuHidden(true)}
-            >
-              {item.label}
-            </Link>
-          )
+          <button
+            key={item.path}
+            onClick={(e) => {
+              item.onClick();
+              setIsMenuHidden(true);
+            }}
+            className={`px-12 py-2.5 text-center rounded-lg cursor-pointer transition-all duration-300 ease-in-out hover:scale-[1.02] active:scale-[0.98] text-gray-700 font-inter ${
+              item.isActive 
+                ? "font-bold" 
+                : "hover:bg-white/20"
+            }`}
+          >
+            {item.label}
+          </button>
         ))}
       </div>
     </div>
