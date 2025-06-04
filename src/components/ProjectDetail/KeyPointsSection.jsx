@@ -32,7 +32,7 @@ const KeyPointsSection = ({ id, title, keyPoints }) => {
   return (
     <section id={id} className="mb-12">
       <h2 className="text-2xl md:text-3xl font-semibold mb-8 font-inter-tight text-left">{title}</h2>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-[80%]">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:w-[70%]">
         {keyPoints.map((point, index) => (
           <div key={index} className="p-[2px] rounded-xl bg-gradient-to-r from-[#fedf89] via-[#ffc371] to-[#a84dc3] h-full">
             <div className="bg-gray-100 rounded-xl p-8 flex flex-col h-full">

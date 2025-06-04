@@ -8,6 +8,7 @@ import NotFound from "./routes/NotFound";
 import ProjectDetail from "./routes/ProjectDetail";
 import TestStickyScroll from "./pages/TestStickyScroll";
 import { useEffect } from "react";
+import { trackPageView } from "./utils/analytics";
 
 // ScrollToTop component to handle scroll restoration
 const ScrollToTop = () => {
@@ -15,6 +16,8 @@ const ScrollToTop = () => {
 
   useEffect(() => {
     window.scrollTo(0, 0);
+    // Track page view when route changes
+    trackPageView(pathname);
   }, [pathname]);
 
   return null;

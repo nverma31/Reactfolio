@@ -28,12 +28,12 @@ const ProjectCard = ({
       to={`/projects/${urlId || projectName.toLowerCase()}`}
       className="block"
     >
-      <div className="bg-[#F5F7F9] hover:bg-[#F6F6F6] rounded-2xl hover:shadow-lg transition-all duration-300 ease-in-out py-6 px-4 md:py-8 md:px-6 lg:py-10 lg:px-8 max-w-4xl w-full flex flex-col md:flex-row items-stretch hover:scale-105">
+      <div className="bg-[#F5F7F9] hover:bg-[#F6F6F6] rounded-2xl hover:shadow-lg transition-all duration-300 ease-in-out py-4 px-4 md:py-8 md:px-6 lg:py-10 lg:px-8 max-w-4xl w-full flex flex-col md:flex-row items-stretch hover:scale-105">
         {/* Left Text Section */}
         <div className="md:w-[40vw] w-full text-center md:text-left mb-4 md:mb-0 flex flex-col justify-center">
           <h1 className="text-xl lg:text-2xl font-['Satoshi'] font-bold text-gray-800 mb-1">{projectName}</h1>
-          <p className="text-xs text-gray-500 uppercase tracking-wider mb-2 font-medium">{date}</p>
-          <p className="text-gray-700 text-sm lg:text-base mb-4 leading-relaxed">
+          <p className="text-xs text-gray-500 uppercase tracking-wider mb-1 font-medium">{date}</p>
+          <p className="text-gray-700 text-sm lg:text-base mb-3 leading-relaxed">
             {projectDescription}
           </p>
           <div onClick={handleButtonClick}>
@@ -57,11 +57,11 @@ const ProjectCard = ({
 
         {/* Right Image Section */}
         <div className="md:w-[65vw] w-full flex justify-center items-center mt-4 md:mt-0">
-          <div className="h-[60vh] flex items-center justify-center">
+          <div className="h-full md:h-[60vh] flex items-center justify-center">
             <img
               src={imageError ? "https://placehold.co/240x480/CCCCCC/FFFFFF?text=Image+Error&font=sans" : imageUrl}
               alt={`${projectName} Preview`}
-              className={`${imageClassName} max-h-full w-auto object-contain`}
+              className={`${imageClassName} h-full md:max-h-full w-auto object-contain`}
               onError={handleImageError}
             />
           </div>

@@ -44,10 +44,11 @@ const Contact = () => {
         animate="visible"
       >
         <motion.div 
-          className="text-4xl md:text-5xl font-semibold leading-relaxed"
+          className="text-2xl md:text-5xl font-semibold leading-tight"
           variants={itemVariants}
         >
-          Like what you see<br/>
+          Like what you see
+          <br/>
           <span className="inline-block animate-gradient bg-clip-text text-transparent" style={{
             backgroundImage: "linear-gradient(270deg, #ff5f6d, #ffc371, #c34dbf, #ff4b1f, #ff9068, #16bffd, #a84dc3, #cb3066, #4ca1af, #c4e0e5)",
             backgroundSize: "2000% 2000%"

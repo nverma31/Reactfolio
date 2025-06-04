@@ -75,7 +75,7 @@ const Banner = () => {
                   projectsSection.scrollIntoView({ behavior: 'smooth' });
                 }
               }}
-              className="px-6 py-3 border border-current rounded-full hover:bg-black hover:text-white transition-colors duration-300 text-center flex items-center justify-center gap-2"
+              className="w-fit px-6 py-3 border border-current rounded-full hover:bg-black hover:text-white transition-colors duration-300 text-center flex items-center justify-center gap-2"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
