@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import { imgLogo, textLogo, footerIcons, navElements } from "../../assets/assets.js";
 
 const Footer = ({ activeElem, setActiveElem }) => {
@@ -10,9 +9,16 @@ const Footer = ({ activeElem, setActiveElem }) => {
         </div>
         <div className="flex gap-[10px] pr-4">
           {footerIcons.map(({ name, component: IconComponent, link }) => (
-            <Link to={link} key={name} className="flex" title={name}>
+            <a 
+              href={link} 
+              key={name} 
+              className="flex" 
+              title={name}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <IconComponent className="w-4 bedar-sm:w-6 h-4 bedar-sm:h-6 fill-gray-600 hover:fill-black transition-colors ease-linear" />
-            </Link>
+            </a>
           ))}
         </div>
       </div>

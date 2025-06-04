@@ -71,12 +71,13 @@ const Contact = () => {
           
           <motion.a
             href="/resume.pdf"
-            download
+            target="_blank"
+            rel="noopener noreferrer"
             className="px-8 py-4 rounded-full border border-current hover:bg-black hover:text-white transition-colors duration-300 text-center flex items-center justify-center gap-2 text-lg font-medium"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
           >
-            Download my resume <FiDownload className="w-5 h-5" />
+            See my resume <FiDownload className="w-5 h-5" />
           </motion.a>
         </motion.div>
       </motion.div>

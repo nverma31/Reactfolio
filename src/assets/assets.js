@@ -28,19 +28,19 @@ import { IoLogoGithub } from "react-icons/io";
 // Example: To change the Twitter icon, replace 'FaSquareXTwitter' with another icon.
 const footerIcons = [
   {
-    name: "linkedIn", // Social media name
-    component: FaLinkedin, // LinkedIn icon
-    link: "Your linkedIn link", // Replace with your actual LinkedIn URL
+    name: "linkedIn",
+    component: FaLinkedin,
+    link: "https://www.linkedin.com/in/neeraj-nagar/",
   },
   {
     name: "github",
-    component: IoLogoGithub, // GitHub icon
-    link: "Your github link",
+    component: IoLogoGithub,
+    link: "https://github.com/nverma31",
   },
   {
-    name: "x", // Social media name
-    component: FaSquareXTwitter, // Twitter icon from react-icons
-    link: "Your twitter link", // Replace with your actual Twitter URL
+    name: "x",
+    component: FaSquareXTwitter,
+    link: "https://x.com/Neeraj_Vermaa",
   },
   // You can add more icons or remove existing ones based on your social profiles.
 ];
@@ -65,7 +65,7 @@ const AboutPage = {
   getInTouchUrl: "https://www.linkedin.com/in/neeraj-nagar/",
   authorName: "Neeraj Nagar",
   profileImgTagLine: "Software Engineer @ Google",
-  authorContactMail: "neerajnagar@gmail.com",
+  authorContactMail: "nverma31@gmail.com",
   authorContactNumber: "", // Optional
 };
 
