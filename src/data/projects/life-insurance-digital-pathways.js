@@ -18,7 +18,7 @@ const lifeInsuranceDigitalPathways = {
         type: "introduction",
         title: "Introduction",
         content: [
-          "As part of a flagship project at Tom & Polly, we set out to redesign the life insurance experience by replacing traditional, agent-led processes with a fully digital sales and underwriting journey.",
+          "As part of a flagship project at Tom & Polly(CLARK UK brands), we set out to redesign the life insurance experience by replacing traditional, agent-led processes with a fully digital sales and underwriting journey.",
           "The goal was to address common user pain points—complexity, jargon, and time constraints—and create an accessible, self-serve experience that users could complete anytime, without needing to speak to an agent."
         ]
       },
@@ -115,25 +115,25 @@ const lifeInsuranceDigitalPathways = {
         features: [
           {
             title: "Mobile-first Design",
-            description: "Optimized for use on any device, ensuring a seamless experience across all platforms.",
+            description: "Optimized for use on any device, ensuring a seamless experience across all platforms. Since launch we had more visits from mobile users than desktop users.",
             image: "/images/projects/digitalpathways/mobilefirst.png",
             imageAlt: "Mobile-first Design Implementation"
           },
           {
             title: "Streamlined Quoting",
-            description: "Get a quote in under 60 seconds with our simplified and efficient quoting process.",
+            description: "We wanted customers to get to the quote page as fast as possible. We simplified the quick quote process so that the user can get to the quote page in under 60 seconds. ",
             image: "/images/projects/digitalpathways/quick.png",
             imageAlt: "Streamlined Quoting Process"
           },
           {
             title: "Conversational Question Flow",
-            description: "Simplified and dynamic underwriting process that guides users through the application naturally.",
+            description: "Tom & Polly are for modern Moms and Dads. We kept the health and other questions conversational in line with the brand's tone of voice.",
             image: "/images/projects/digitalpathways/questions.png",
             imageAlt: "Conversational Question Flow"
           },
           {
-            title: "Transparent Pricing",
-            description: "Easy-to-understand policy information and quote details, ensuring complete transparency.",
+            title: "Transparent Pricing while allowing for customisation",
+            description: "Easy-to-understand policy information and quote details, ensuring complete transparency. We also allowed for customisation of the policy to make it more affordable for the user.",
             image: "/images/projects/digitalpathways/price.png",
             imageAlt: "Transparent Pricing Display"
           },

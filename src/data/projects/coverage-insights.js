@@ -1,6 +1,6 @@
 const coverageInsights = {
   projectName: "Coverage Insights",
-  projectDescription: "Strategic design and implementation of a sophisticated in-app recommendations engine for the Tom and Polly mobile applications.",
+  projectDescription: "Strategic design and implementation of a sophisticated in-app recommendations engine for CLARK UK mobile applications.",
   projectURL: "",
   githubRepositoryURL: "",
   tags: "Node.js, React.js, PostgreSQL, GraphQL",
@@ -19,7 +19,7 @@ const coverageInsights = {
         type: "introduction",
         title: "Introduction",
         content: [
-          "Tom and Polly are a UK-based company specializing in insurances for Mums and Dads. ",
+          "Tom and Polly are a CLARK's UK brands specializing in insurances for Moms and Dads. ",
           "This case study details the strategic design and implementation of a sophisticated in-app recommendations engine for the Tom and Polly mobile applications."
         ]
       },
@@ -48,8 +48,7 @@ const coverageInsights = {
         type: "introduction",
         title: "Discovery",
         content: [
-          "We conducted qualitative interviews to explore how people currently understand and purchase life insurance, uncovering key pain points and mental models.",
-          "We also carried out competitive benchmarking of both traditional life insurance's online buying journey and price comparison sites to identify gaps and best practices in the market."
+          "We conducted qualitative interviews to explore how people currently understand and purchase life insurance, uncovering key pain points and mental models."
         ]
       },
       {
@@ -155,9 +154,33 @@ const coverageInsights = {
         features: [
           {
             title: "Life stages based coverage insights",
-            description: " We introduced insurance suggestions can vary depending on where you are in life to make it more personal. We staretd with four key life stages for our core user demographics - Independent, Young family, Next chapter, Growing family.",
+            description: " We introduced insurance suggestions can vary depending on where you are in life to make it more personal. We started with four key life stages for our core user demographics - Independent, Young family, Next chapter, and Growing family.",
             image: "/images/projects/coverage-insights/lifestages.png",
             imageAlt: "Life stages based coverage insights for Polly"
+          }
+        ]
+      },
+      {
+        id: "impact-section",
+        type: "impact",
+        title: "Project Impact",
+        copyText: "The introduction of coverage insights as a key tool for cross sell enabled us to increase the cross sell rate of additional insurance products to existing customers, which in turn increased the revenue generated from the apps..",
+        content: [
+          {
+            label: "Revenue",
+            value: "240%",
+            subtitle: "Year-over-year growth",
+            description: "We have reached last year total revenue by May and we are seeing growth in monthly revenues by 40%",
+            bgColor: "bg-yellow-200",
+            textColor: "text-yellow-800"
+          },
+          {
+            label: "Cross sell opportunities",
+            value: "$400%",
+            subtitle: "Increase in callback requested",
+            description: "We have seen a 400% increase in cross-sell opportunities, which went from 0.5% to 2,5%.",
+            bgColor: "bg-gray-200",
+            textColor: "text-gray-800"
           }
         ]
       },
@@ -185,53 +208,6 @@ const coverageInsights = {
           {
             title: "Brand Consistency Matters",
             description: "Adapting the experience to each brand's tone and style increases user comfort and adoption."
-          }
-        ]
-      },
-      {
-        id: "impact-section",
-        type: "impact",
-        title: "Project Impact",
-        copyText: "The digital transformation of our life insurance platform has delivered significant improvements across key business metrics, demonstrating the value of user-centered design in regulated industries.",
-        content: [
-          {
-            label: "Revenue",
-            value: "240%",
-            subtitle: "Year-over-year growth",
-            description: "We have reached last year total revenue before the end of May and we are seeing growth in monthly revenues by 40%",
-            bgColor: "bg-yellow-200",
-            textColor: "text-yellow-800"
-          },
-          {
-            label: "Cross sell opportunities",
-            value: "$400%",
-            subtitle: "Increase in callback requested",
-            description: "We have seen a 400% increase in cross-sell opportunities, which went from 0.5% to 2,5%(for first 8 weeks).",
-            bgColor: "bg-gray-200",
-            textColor: "text-gray-800"
-          }
-        ]
-      },
-      {
-        id: "what-we-learned",
-        type: "learnings",
-        title: "What we learned",
-        content: [
-          {
-            title: "Power of Existing Data (Used Right)",
-            description: "Our life insurance customers had already shared valuable information. Using this (transparently) as a foundation for relevant recommendations proved far more effective than generic marketing. Recommendations needed to feel like a natural extension of the service, not a misuse of data."
-          },
-          {
-            title: "Iterative Approach to Sophistication",
-            description: "Starting with a simpler needs overview allowed us to launch, learn, and then build more sophisticated features like life-stage triggers. This phased approach was crucial for managing complexity and delivering value incrementally."
-          },
-          {
-            title: "The \"Why\" Before the \"What\"",
-            description: "Leading with an overview of why certain insurances might be relevant before pushing a specific product was key to making recommendations feel like helpful guidance rather than a sales pitch."
-          },
-          {
-            title: "Continuous Testing is Key",
-            description: "Multiple rounds of user testing were invaluable. What seemed like a clear recommendation internally sometimes needed significant refinement based on real user feedback to ensure it was understood and well-received."
           }
         ]
       }

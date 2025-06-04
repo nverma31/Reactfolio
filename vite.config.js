@@ -4,7 +4,7 @@ import react from "@vitejs/plugin-react";
 
 export default defineConfig({
   plugins: [react()],
-  base: './',
+  base: '/',
   build: {
     outDir: 'dist',
     assetsDir: 'assets',
@@ -26,4 +26,7 @@ export default defineConfig({
   server: {
     historyApiFallback: true,
   },
+  optimizeDeps: {
+    include: ['src/data/**/*.js']
+  }
 });

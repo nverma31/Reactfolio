@@ -7,7 +7,7 @@ const LearningsSection = ({ id, title, learnings }) => {
       <div className="space-y-6 lg:w-[70%]">
         {learnings.map((learning, index) => (
           <div key={index}>
-            <h3 className="text-xl font-semibold mb-2 font-inter-tight">{learning.title}</h3>
+            <h3 className="text-lg font-semibold mb-2 font-inter-tight">{learning.title}</h3>
             <p className="text-gray-700">{learning.description}</p>
           </div>
         ))}

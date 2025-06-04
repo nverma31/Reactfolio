@@ -40,8 +40,8 @@ const principles = [
 ];
 
 const PrincipleRequirementsSection = () => (
-  <section className="mb-12 flex flex-col items-center">
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-[80%] w-full">
+  <section className="mb-12 flex flex-col items-center md:items-start">
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-6 w-full md:max-w-[80%]">
       {principles.map((p, i) => (
         <div key={i} className="p-[2px] rounded-xl bg-gradient-to-r from-[#fedf89] via-[#ffc371] to-[#a84dc3] h-full">
           <div className="bg-gray-100 rounded-xl p-0 flex flex-col h-full">

@@ -8,11 +8,11 @@ const paypal = {
   date: "July 2013 - June 2014",
   imageUrl: "/images/projects/paypal/card.png",
   details: {
-    timeline: "July 2013 - June 2014",
+    timeline: "July 2013 - June 2015",
     platform: "Web & Mobile Application",
     role: "Software Engineer",
     client: "PayPal",
-    heroImage: "/images/projects/paypal/8ball.jpg",
+    heroImage: "/images/projects/paypal/hero.png",
     heroImageAlt: "PayPal Reboot Project",
     customTitle: "Rebooting PayPal - A Complete Digital Transformation",
     sections: [
@@ -28,13 +28,13 @@ const paypal = {
         id: "my-role",
         type: "introduction",
         title: "My Role",
-        content: "I worked as a software engineer in the customer team responsible for overhauling the website and the mobile app."},
+        content: "I worked as a software engineer in the customer team responsible for overhauling the website and the mobile app. I developed the microservices that were used to support the both the mobile and web experience as well as on the frontend of the website."},
       {
         id: "process",
         type: "introduction",
         title: "How we got there",
         content: [
-          "It was a truly cross-disciplinary collaborative effort. Product owners worked closely with designers and researchers to align business and user needs. Developers (like myself) were involved throughout, building microservices to support the experience. The process was agile and iterative, incorporating user testing at each step."
+          "It was a truly cross-disciplinary collaborative effort. Product owners worked closely with designers and researchers to align business and user needs. Developers (like myself) were involved throughout to support the experience and vision of the product. The process was agile and iterative, incorporating user testing at each step."
         ]
       },
       {
@@ -53,7 +53,7 @@ const paypal = {
               },
               {
                 src: "/images/projects/paypal/web6.jpg",
-                alt: "Prominent space for marketing to promote new products and educate customers.p"
+                alt: "Prominent space for marketing to promote new products and educate customers."
               }
             ]
           },
@@ -153,6 +153,33 @@ const paypal = {
             description: "More customers linking their bank accounts",
             bgColor: "bg-purple-200",
             textColor: "text-purple-800"
+          }
+        ]
+      },
+      {
+        id: "learnings",
+        type: "learnings",
+        title: "Learnings",
+        content: [
+          {
+            title: "Systems Drive Experience",
+            description: "Understood how backend architecture and micro-service design are fundamental to user experience, learning that robust systems are prerequisites for intuitive interactions and directly influence engagement metrics."
+          },
+          {
+            title: "Engineering Empathy for Users",
+            description: "Gained invaluable insights into translating user needs and design intentions into viable technical solutions, fostering deep empathy for both developer challenges and user frustrations."
+          },
+          {
+            title: "Data Validates Technical UX Impact",
+            description: "Witnessed firsthand how engineering initiatives led to measurable UX improvements (e.g., 20% DAU lift), reinforcing the use of data to validate technical changes supporting a better user experience."
+          },
+          {
+            title: "FinTech Design at Scale",
+            description: "Developed a rigorous approach to designing for scalability, security, and reliability on a platform serving millions globally—critical aspects I prioritize in FinTech design."
+          },
+          {
+            title: "Transformative Collaboration",
+            description: "Learned the essential role of shared goals and clear communication between engineering, product, and design in successfully navigating complex platform transformations."
           }
         ]
       }

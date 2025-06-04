@@ -9,7 +9,7 @@ const sixtShare = {
   details: {
     timeline: "Dec 2021 - June 2022",
     platform: "Mobile Application",
-    role: "Lead Product Designer",
+    role: "Senior Product Designer",
     heroImage: "/images/projects/sixt-share/hero.png",
     heroImageAlt: "SIXT Share Micro-mobility Integration",
     customTitle: "Shared Micro-mobility to SIXT Share",
@@ -19,7 +19,7 @@ const sixtShare = {
         type: "introduction",
         title: "Introduction",
         content: [
-          "SIXT share offers car sharing to its customers via the share tab in the SIXT app. Due to shortage of cars because of the semiconductor crisis after Corona, Sixt share could not meet the demands of its customers and had declining customers and revenue.",
+          "SIXT share offers car sharing to its customers via the share tab in the SIXT app. Due to shortage of cars because of the semiconductor crisis after COVID 19, Sixt share could not meet the demands of its customers and had declining customers and revenue.",
           "It was decided that SIXT Share will now also offer shared micro-mobility along with shared cars with a focus to increase its customer base, market footprint, and revenue."
         ]
       },
@@ -32,13 +32,13 @@ const sixtShare = {
       {
         id: "understand",
         type: "introduction",
-        title: "01. Understand",
+        title: "Understand",
         content: "We started with understanding the micro-mobility space by conducting a competitive benchmarking. With our improved understanding, we planned field research with users of our future micro-mobility partners to better understand their attitudes and behaviour."
       },
       {
         id: "key-insights",
         type: "keypoints",
-        title: "Key Insights",
+        title: "Key Insights from qualitative research",
         content: [
           {
             label: "Use Case",
@@ -69,7 +69,7 @@ const sixtShare = {
       {
         id: "defining-success",
         type: "introduction",
-        title: "02. Defining Success",
+        title: "Defining Success",
         content: "As we were gaining a deeper understanding of both users and the micro-mobility business, we established certain guiding principles for our product, which determined the product requirements."
       },
       {
@@ -125,7 +125,7 @@ const sixtShare = {
       {
         id: "final-design",
         type: "introduction",
-        title: "04. Final Design",
+        title: "Final Design",
         content: "We first launched with TIER as our partner with all modes—e-scooters, mopeds, and bikes. This expanded our reach beyond Germany and the Netherlands into cities across Europe. We later integrated Nextbike (bikes), Cooltra (mopeds), and MILES (cars) using the same design system."
       },
       {
@@ -156,7 +156,7 @@ const sixtShare = {
       {
         id: "impact",
         type: "impact",
-        title: "05. Impact",
+        title: "Impact",
         content: [
           {
             label: "Market Expansion",
@@ -176,9 +176,9 @@ const sixtShare = {
           },
           {
             label: "Business Impact",
-            value: "15%",
+            value: "22%",
             subtitle: "Revenue increase",
-            description: "We saw a 15% increase in revenue YOY after the launch of the micro-mobility.",
+            description: "We saw a 22% increase in revenue YOY after the launch of the micro-mobility.",
             bgColor: "bg-purple-200",
             textColor: "text-purple-800"
           }

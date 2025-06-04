@@ -9,7 +9,7 @@ const audiModelPages = {
   details: {
     timeline: "Jan 2020 - Dec 2020",
     platform: "Web Application",
-    role: "Senior Product Designer",
+    role: "Leading UX Deseign",
     heroImage: "/images/projects/audi/hero.png",
     heroImageAlt: "Audi Model Pages Redesign",
     customTitle: "Audi Model Pages - Redesigning the Digital Showroom Experience",
@@ -26,7 +26,7 @@ const audiModelPages = {
         id: "my-role",
         type: "introduction",
         title: "My Role",
-        content: "As the senior product designer, I led the redesign process from research to implementation. I collaborated with stakeholders from Audi's marketing team, product managers, and developers to ensure the new design met both user needs and business objectives."
+        content: "I led the redesign process from research to implementation. I collaborated with stakeholders from Audi's marketing team, product managers, and developers to ensure the new design met both user needs and business objectives."
       },
       {
         id: "research",
@@ -49,7 +49,7 @@ const audiModelPages = {
         features: [
           {
             title: "",
-             description: "We focused on a simple Information Architecture that was based on user needs identified in research. We reimagined how the model page will fit in with whole Audi website and also how the model page itself needs to be modular depending on the different kinds of cars and people's expectations towards those cars. This also allowed us to give requirements to the content team and developers to start working on the system architecture..",
+             description: "We focused on a simple Information Architecture that was based on user needs identified in research. We reimagined how the model page will fit in with whole Audi website and also how the model page itself needs to be modular depending on the different kinds of cars and people's expectations towards those cars. This also allowed us to give requirements to the content team and developers to start working on the system architecture.",
             image: "/images/projects/audi/ia.png",
             imageAlt: "Main navigation structure showing vehicle categories and hierarchy"
           },
@@ -73,7 +73,7 @@ const audiModelPages = {
         id: "iterations",
         type: "image",
         title: "Iterative Development of Scalable Modules",
-        description: "We designed and refined scalable content modules for different vehicle types. The main challenge was balancing technical/content constraints with editorial flexibility and user experience.",
+        description: "We designed and refined scalable content modules for different vehicle types. These modules can be configured by content editors to create different variations of different model pages. The main challenge was balancing technical/content constraints with editorial flexibility and user experience.",
         image: "/images/projects/audi/modules.png",
         imageAlt: "User research process showing interviews, diary studies, and journey mapping"
       },
