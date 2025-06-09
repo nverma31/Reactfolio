@@ -11,14 +11,14 @@ const lifeInsuranceDigitalPathways = {
     role: "Senior Product Designer",
     heroImage: "/images/projects/digitalpathways/hero.png",
     heroImageAlt: "Life Insurance Digital Pathways Platform Overview",
-    customTitle: "Life Insurance Digital Pathways - Transforming the Insurance Experience",
+    customTitle: "Life Insurance Digital Pathways",
     sections: [
       {
         id: "introduction",
         type: "introduction",
         title: "Introduction",
         content: [
-          "As part of a flagship project at Tom & Polly(CLARK UK brands), we set out to redesign the life insurance experience by replacing traditional, agent-led processes with a fully digital sales and underwriting journey.",
+          "As part of a flagship project at Tom & Polly(CLARK UK brands), we set out to redesign the life insurance experience from a traditional, agent-led processes to a fully digital sales and underwriting journey.",
           "The goal was to address common user pain points—complexity, jargon, and time constraints—and create an accessible, self-serve experience that users could complete anytime, without needing to speak to an agent."
         ]
       },
@@ -102,7 +102,7 @@ const lifeInsuranceDigitalPathways = {
           
           {
             title: "Usability Testing",
-            description: "Before launch, we ran two rounds of usability testing. These sessions were crucial in validating key flows and language choices, and they helped guide refinements that shaped a more intuitive and user-friendly MVP. Following are some slides from our usability testing sessions.",
+            description: "Before first launch, we ran two rounds of usability testing. These sessions were crucial in validating key flows and language choices, and they helped guide refinements that shaped a more intuitive and user-friendly MVP. Following are some slides from our usability testing sessions.",
             image: "/images/projects/digitalpathways/usabilitytesting.png",
             imageAlt: "Usability Testing findings and some slides from the findings presentation"
           }
@@ -115,33 +115,64 @@ const lifeInsuranceDigitalPathways = {
         features: [
           {
             title: "Mobile-first Design",
-            description: "Optimized for use on any device, ensuring a seamless experience across all platforms. Since launch we had more visits from mobile users than desktop users.",
+            description:"Recognizing that a significant portion of our target audience would access the service via mobile, the entire journey was designed with a mobile-first approach, ensuring a seamless and optimized experience on all devices. Mobile subsequently became the primary traffic source.",
             image: "/images/projects/digitalpathways/mobilefirst.png",
-            imageAlt: "Mobile-first Design Implementation"
+            imageAlt: "Mobile-First: Optimized for on-the-go access, reflecting user behaviors"
           },
           {
             title: "Streamlined Quoting",
-            description: "We wanted customers to get to the quote page as fast as possible. We simplified the quick quote process so that the user can get to the quote page in under 60 seconds. ",
+            description: "We designed the flow to allow users to receive an indicative quote in under 60 seconds, drastically reducing the time and effort compared to traditional methods. This directly addressed the user need for quick, accessible information.",
             image: "/images/projects/digitalpathways/quick.png",
-            imageAlt: "Streamlined Quoting Process"
+            imageAlt: "Streamlined Quoting: Delivering initial quotes in under 60 seconds."
           },
           {
-            title: "Conversational Question Flow",
-            description: "Tom & Polly are for modern Moms and Dads. We kept the health and other questions conversational in line with the brand's tone of voice.",
+            title: "Conversational & Empathetic Question Flow",
+            description: "The language and tone of the application questions were carefully crafted to be conversational, reassuring, and aligned with the Tom & Polly brand identities (targeting modern moms and dads). This aimed to reduce the intimidation factor often associated with insurance applications.",
             image: "/images/projects/digitalpathways/questions.png",
-            imageAlt: "Conversational Question Flow"
+            imageAlt: " Using empathetic language to guide users."
           },
           {
-            title: "Transparent Pricing while allowing for customisation",
-            description: "Easy-to-understand policy information and quote details, ensuring complete transparency. We also allowed for customisation of the policy to make it more affordable for the user.",
+            title: "Transparent Pricing with Clear Customisation",
+            description: "Policy information and quote breakdowns were presented with utmost clarity. Users were also empowered to easily adjust coverage amounts and see the immediate impact on their premium, fostering a sense of control and transparency.",
             image: "/images/projects/digitalpathways/price.png",
             imageAlt: "Transparent Pricing Display"
           },
           {
-            title: "iptiQ Integration",
-            description: "Enabled real-time underwriting decisions through seamless integration with iptiQ.",
+            title: "Seamless iptiQ Underwriting Integration",
+            description: "A critical technical achievement was the real-time, seamless integration with iptiQ's underwriting engine. This allowed for instant underwriting decisions for a majority of applicants, forming the backbone of the fully digital experience.",
             image: "/images/projects/digitalpathways/magnum.png",
-            imageAlt: "iptiQ Integration"
+            imageAlt: "iptiQ Integration: Powering real-time, automated underwriting decisions."
+          }
+        ]
+      },
+      {
+        id: "design-process",
+        type: "feature",
+        title: "Continuous conversion optimisation",
+        content:"We are still continuously optimising with new features and A/B testing different designs and copy. We also tested different CTA's and different ways of presenting the information to the users.",
+        features: [
+          {
+            title: "Landing page content and structure iterations",
+            description:"We tested different content and structure of the landing page to see what works best for the users. We also tested different CTA's and different ways of presenting the information to the users.",
+            images: [
+              
+              {
+                src: "/images/projects/digitalpathways/abtest1.png",
+                alt: "Landing page A/B testing"
+              }
+            ]
+          },
+          {
+            title: "Progress tracking for the users",
+            description: "We added a progress tracker so users know how much they have completed and how much they have left to complete.",
+            image: "/images/projects/digitalpathways/progress.png",
+            imageAlt: "progress tracking was added as a new feature"
+          },
+          {
+            title: "Resume the journey",
+            description:"We added a resume the journey feature so users can resume the journey from where they left off.",
+            image: "/images/projects/digitalpathways/resume.png",
+            imageAlt: "Journey resume feature"
           }
         ]
       },
