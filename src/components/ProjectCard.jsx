@@ -30,7 +30,7 @@ const ProjectCard = ({
     >
       <div className="bg-[#F5F7F9] hover:bg-[#F6F6F6] rounded-2xl hover:shadow-lg transition-all duration-300 ease-in-out py-4 px-4 md:py-8 md:px-6 lg:py-10 lg:px-8 max-w-4xl w-full flex flex-col md:flex-row items-stretch hover:scale-105">
         {/* Left Text Section */}
-        <div className="md:w-[40vw] w-full text-center md:text-left mb-4 md:mb-0 flex flex-col justify-center">
+        <div className="md:w-[40vw] w-full text-left mb-4 md:mb-0 flex flex-col justify-center">
           <h1 className="text-xl lg:text-2xl font-['Satoshi'] font-bold text-gray-800 mb-1">{projectName}</h1>
           <p className="text-xs text-gray-500 uppercase tracking-wider mb-1 font-medium">{date}</p>
           <p className="text-gray-700 text-sm lg:text-base mb-3 leading-relaxed">
@@ -39,7 +39,7 @@ const ProjectCard = ({
           <div onClick={handleButtonClick}>
             <Link 
               to={`/projects/${urlId || projectName.toLowerCase()}`} 
-              className="bg-white hover:bg-gray-50 text-gray-600 font-medium py-3 px-4 rounded-lg shadow-sm hover:shadow-md transition-all duration-200 ease-in-out flex items-center justify-center md:justify-start mx-auto md:mx-0 group text-base max-w-[140px] font-['Satoshi'] hover:scale-105"
+              className="bg-white hover:bg-gray-50 text-gray-600 font-medium py-3 px-4 rounded-lg shadow-sm hover:shadow-md transition-all duration-200 ease-in-out flex items-center justify-center md:justify-start mx-0 group text-base max-w-[140px] font-['Satoshi'] hover:scale-105"
             >
               Read More
               <svg 

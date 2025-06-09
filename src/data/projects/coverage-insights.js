@@ -1,10 +1,10 @@
 const coverageInsights = {
-  projectName: "Coverage Insights",
-  projectDescription: "Strategic design and implementation of a sophisticated in-app recommendations engine for CLARK UK mobile applications.",
+  projectName: "From Wallet to Advisor",
+  projectDescription: "A case study on transforming a simple policy app into a proactive advisory tool. See how a strategic pivot to life-stage personalization unlocked a 400% increase in cross-sell opportunities.",
   projectURL: "",
   githubRepositoryURL: "",
   tags: "Node.js, React.js, PostgreSQL, GraphQL",
-  date: "Oct 2024 - Present",
+  date: "Oct 2024 - Present | @ CLARK",
   imageUrl: "/images/projects/coverage-insights/cardimage.png",
   details: {
     timeline: "Oct 2024 - Present",
@@ -12,15 +12,15 @@ const coverageInsights = {
     role: "Senior Product designer",
     heroImage: "/images/projects/coverage-insights/hero.png",
     heroImageAlt: "Coverage Insights Platform Overview",
-    customTitle: "Coverage Insights - Personalized Insurance Recommendations",
+    customTitle: "From Wallet to Advisor: Driving 240% Revenue Growth",
     sections: [
       {
         id: "introduction",
         type: "introduction",
         title: "Introduction",
         content: [
-          "Tom and Polly are a CLARK's UK brands specializing in insurances for Moms and Dads. ",
-          "This case study details the strategic design and implementation of a sophisticated in-app recommendations engine for the Tom and Polly mobile applications."
+          "This case study details the strategic design and implementation of Coverage Insights, a sophisticated in-app recommendations engine for Tom and Polly, CLARK's UK brands specializing in insurance for parents. The goal was to evolve the apps from passive policy managers into proactive, trustworthy platforms that deliver personalized insurance recommendations, build deeper customer relationships, and unlock significant business growth. ",
+          
         ]
       },
       {
@@ -28,14 +28,14 @@ const coverageInsights = {
         type: "introduction",
         title: "My Role",
         content: [
-          "As Lead Designer, I solely owned the end-to-end design, from research and strategy to UX/UI, prototyping, testing, and implementation across two brands, influencing both strategy and execution."
+                  "As the lead designer, I solely owned the end-to-end design, from research and strategy to UX/UI, prototyping, testing, and implementation across two brands, influencing both strategy and execution. This involved close collaboration with product leadership to define this strategic vision, working directly with engineering leads to ensure data feasibility for personalization, and presenting key design milestones and their rationale to executive stakeholders to secure buy-in.",
         ]
       },
       {
         id: "problem",
         type: "introduction",
         title: "Problem",
-        content: "Initially, the Tom and Polly apps were seen merely as policy management apps for your life insurance that you bought with Tom and Polly. This was failing to inform users about other relevant insurance, which stunted business growth and didn't proactively aid users. The core challenge was to evolve them into proactive, trustworthy platforms for personalized insurance recommendations, respecting the distinct Tom and Polly brand identities."
+        content: "Initially, the Tom and Polly apps were seen merely as policy management apps for your life insurance that you bought with Tom and Polly. This was failing to inform users about other relevant insurance, which stunted business growth and didn't proactively aid users. "
       },
       {
         id: "problem-callout",
@@ -43,93 +43,89 @@ const coverageInsights = {
         title: "Framing the problem",
         content: "How to effectively introduce and recommend relevant additional insurance products to existing life insurance customers in a way that felt personalized, valuable, and timely, enhancing trust rather than feeling like an unwanted upsell?"
       },
-      {
-        id: "Discovery",
-        type: "introduction",
-        title: "Discovery",
-        content: [
-          "We conducted qualitative interviews to explore how people currently understand and purchase life insurance, uncovering key pain points and mental models."
-        ]
-      },
-      {
-        id: "key-insights",
-        type: "keypoints",
-        title: "Key Research Insights",
-        content: [
-          {
-            label: "Price",
-            heading: "Price Triggers the Search",
-            description: "Most people only think about insurance when their premium increases—typically at renewal time. Price changes are the #1 reason users start shopping around."
-          },
-          {
-            label: "Comparison",
-            heading: "Comparison First, Loyalty Last",
-            description: "Users go straight to comparison websites (e.g. MoneySuperMarket) to scout for deals. They aren't loyal to one insurer—switching annually is common if the deal is better."
-          },
-          {
-            label: "Life Changes",
-            heading: "Life Changes Spark New Needs",
-            description: "Turning 40, buying a home, having kids—personal milestones prompt users to seek out life or health coverage for peace of mind and future planning."
-          },
-          {
-            label: "Value",
-            heading: "Value = Price + Trust",
-            description: "While price gets attention, final decisions rely on brand reputation and customer reviews. Users prefer well-rated, recognizable names—even if slightly more expensive."
-          }
-        ]
-      },
+
       {
         id: "Vision",
         type: "introduction",
         title: "Vision",
-        content: "Our discovery enabled us to have a very strong vision for the product.."
+        content: "We aimed to transform the apps into trusted advisory platforms, significantly increasing the cross-sell rate of additional products and deepening customer loyalty by demonstrating tangible, personalized value."
       },
       {
         id: "vision-callout",
         type: "callout",
-        title: "Enhanced Financial Protection",
-        content: "Our vision for the app recommendations was to significantly increase the cross-sell rate of additional insurance products to existing life insurance customers. We aimed to transform the apps into proactive platforms for financial protection discovery and provide more holistic and personalized value to our customers."
+        title: "Becoming a Trusted Financial Partner",
+        content: "We aimed to transform the apps into trusted advisory platforms, significantly increasing the cross-sell rate of additional products and deepening customer loyalty by demonstrating tangible, personalized value."
       },
+      ,
+      
       {
         id: "process",
         type: "feature",
-        title: "How we got there",
+        title: "A Continuous Discovery Process",
         features: [
           {
-            title: "Starting with Speed and Collaboration",
-            description: "We began with rapid prototyping and close collaboration between design, product, and engineering teams to ensure quick iterations and alignment on goals. Since, we needed to create a new recommendation engine, there was constant alignment with the data engineering team to ensure we were using the right data and that we were using it in the right way."
+            title: "Explorative Research in the Beginning",
+            description:"To ground our strategy in reality, I began by conducting 12 in-depth qualitative interviews with existing customers. The goal was to uncover their mental models, pain points, and triggers related to buying insurance.",
+            image: "/images/projects/coverage-insights/interviewnotes.png",
+            imageAlt: "Affinity diagram of the interview notes."
           },
           {
-            title: "Iteration and Validation",
-            description: "Through extensive usability testing and A/B testing, we refined the recommendation engine to ensure it provided clear, actionable insights while maintaining a personalized touch.",
-            images: [
+            id: "key-insights",
+            type: "keypoints",
+            title: "Key Research Insights from the qualitative interviews",
+            features: [
               {
-                src: "/images/projects/coverage-insights/interviewnotes.png",
-                alt: "Usability testing notes and insights"
+                label: "Price",
+                heading: "Price Triggers the Search",
+                description: "Most people only think about insurance when their premium increases—typically at renewal time. Price changes are the #1 reason users start shopping around."
               },
               {
-                src: "/images/projects/coverage-insights/abtest.png",
-                alt: "One of the A/B tests we did to test different designs. The right one performed 50% better."
+                label: "Comparison",
+                heading: "Comparison First, Loyalty Last",
+                description: "Users go straight to comparison websites (e.g. MoneySuperMarket) to scout for deals. They aren't loyal to one insurer—switching annually is common if the deal is better."
+              },
+              {
+                label: "Life Changes",
+                heading: "Life Changes Spark New Needs",
+                description: "Turning 40, buying a home, having kids—personal milestones prompt users to seek out life or health coverage for peace of mind and future planning."
+              },
+              {
+                label: "Value",
+                heading: "Value = Price + Trust",
+                description: "While price gets attention, final decisions rely on brand reputation and customer reviews. Users prefer well-rated, recognizable names—even if slightly more expensive."
               }
             ]
           },
           {
-            title: "Adapting Content and Brand Specification",
-            description: "We carefully crafted category pages and implemented brand-specific changes to ensure the recommendations felt native to each brand's identity while maintaining consistency in the user experience.",
-            image: "/images/projects/coverage-insights/content.png",
-            imageAlt: "Each insurance category page needed to be tailored to the brand's identity and tone of voice."
+            title: "Kicking off with supercharged ideation",
+            description: "Armed with these insights, I facilitated \"supercharged ideation\" workshops with a diverse group of stakeholders, including Sales, Operations, Compliance, Business, and Technology. This cross-functional collaboration ensured our ideas were desirable, viable, and technically feasible from the start.",
+           
+          },
+          {
+            title: "Quickly Getting Started and Testing Ideas",
+            description: "Leveraging our existing design system, we were able to quickly translate the most promising ideas from the workshops into tangible, low-fidelity prototypes. This allowed us to test concepts rapidly without significant engineering investment. Early feedback helped us discard ideas that didn't resonate and identify a core set of features for an initial MVP.",
+            images: [
+              {
+                src: "/images/projects/coverage-insights/proto1.png",
+                alt: "Initial prototype of the coverage insights tested with the users highlighting coverage gaps and recommended products"
+              },
+              {
+                src: "/images/projects/coverage-insights/Proto2.png",
+                alt: "Another iteration of the coverage insights tested with the users with insurance overview and more catergories"
+              }
+            ]
           }
         ]
       },
       {
         id: "final-designs",
         type: "alternating-feature",
-        title: "Final Designs",
-        content: "Our final designs focused on creating an intuitive and personalized experience for users to discover and understand their insurance needs.",
+        title: "An Initial MVP launch",
+        content: "In the MVP we presented the users with coverage insights based on basic data points they had already provided. This allowed us to get a functional version to market quickly while we continued to learn.",
         features: [
           {
             title: "Coverage Insights in Home Screen",
-            description: "The coverage insights tells the users what they are covered for and what they should get to achieve financial security and peace of mind. We started with categorising information based on insurance types but later evolved to needs based categorisation.",
+            description: "The coverage insights tells the users what they are covered for and what they should get to achieve financial security and peace of mind.",
             image: "/images/projects/coverage-insights/homenew.png",
             imageAlt: "Coverage Insights Recommendations Interface"
           },
@@ -141,7 +137,7 @@ const coverageInsights = {
           },
           {
             title: "Insurance category details page",
-            description: "These pages informs the users about the what that insurance is all about and how it can benefit them.",
+            description: "These pages informs the users what the recommended insurance is all about and how it can benefit them.",
             image: "/images/projects/coverage-insights/categorynew.png",
             imageAlt: "Coverage Insights Life Stage Detection"
           }
@@ -150,11 +146,25 @@ const coverageInsights = {
       {
         id: "final-refinement",
         type: "feature",
-        title: "Final Refinement",
+        title: "Continuous Refinement and key strategic pivot",
         features: [
           {
-            title: "Life stages based coverage insights",
+            title: "A/B Testing Many Improvements",
             description: " We introduced insurance suggestions can vary depending on where you are in life to make it more personal. We started with four key life stages for our core user demographics - Independent, Young family, Next chapter, and Growing family.",
+            images: [
+              {
+                src: "/images/projects/coverage-insights/abtest.png",
+                alt: "One A/B test that enables us to simplify the structure of the recommendations"
+              },
+              {
+                src: "/images/projects/coverage-insights/abtest2.png",
+                alt: "Another A/B test where we experimented with the CTA of the insights sections on the home page with different copy and designs"
+              }
+            ]
+          },
+          {
+            title: "A Key Strategic Refinement: Pivot to Life Stages",
+            description: "Ongoing user testing revealed a key insight: recommendations tied to life events performed best. This prompted a strategic pivot, reframing the problem from \"What can we sell?\" to \"How can we help at this life stage?\" This \"Life Stages\" model unlocked true personalization, transforming the feature from a simple cross-sell tool into a genuine advisory experience.",
             image: "/images/projects/coverage-insights/lifestages.png",
             imageAlt: "Life stages based coverage insights for Polly"
           }
@@ -190,24 +200,20 @@ const coverageInsights = {
         title: "Learnings",
         content: [
           {
-            title: "Personalization Drives Value",
-            description: "Tailoring recommendations to user life stages and needs significantly increases engagement and perceived value."
+            title: "Discovery is a Mindset, Not a Phase",
+            description: "This project proved the value of continuous discovery. Our biggest strategic win—the pivot to \"Life Stages\"—came from insights gathered months after the initial launch, highlighting the need to constantly learn and be willing to reframe the problem."
           },
           {
-            title: "Trust is Earned Through Transparency",
-            description: "Clear communication about why products are recommended and how data is used builds user trust."
+            title: "Lead with Strategy, Validate with Data",
+            description: "My most impactful contribution was not a specific UI, but successfully championing the strategic shift from a product-based to a needs-based model. This vision was born from qualitative insights and ultimately validated by a massive uplift in our quantitative metrics."
           },
           {
-            title: "Simplicity Wins",
-            description: "Reducing complexity in both UI and product explanations helps users make confident decisions."
+            title: "Cross-Functional Ideation Unlocks Better Solutions",
+            description: "Involving stakeholders from Sales and Compliance early in the process brought invaluable perspectives that we, as designers and engineers, would have missed on our own."
           },
           {
-            title: "Continuous Feedback Improves Outcomes",
-            description: "Regular user testing and feedback loops are essential for refining recommendations and user flows."
-          },
-          {
-            title: "Brand Consistency Matters",
-            description: "Adapting the experience to each brand's tone and style increases user comfort and adoption."
+            title: "A Design System is a Living Product",
+            description: "We learned to treat our design system not as a static library, but as a product in itself. This project required us to contribute back, evolving the system to meet the needs of more complex, data-driven features."
           }
         ]
       }

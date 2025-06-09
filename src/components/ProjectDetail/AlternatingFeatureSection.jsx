@@ -13,10 +13,10 @@ const AlternatingFeatureSection = ({ id, title, content, features }) => {
             key={index} 
             className={`flex flex-col ${
               index % 2 === 0 ? 'lg:flex-row' : 'lg:flex-row-reverse'
-            } gap-8 items-start`}
+            } gap-8 items-center`}
           >
             {/* Text Column - Now first in mobile view */}
-            <div className="w-full lg:w-1/2 order-1 lg:order-none">
+            <div className="w-full lg:w-1/2 order-1 lg:order-none flex flex-col justify-center">
               {feature.title && (
                 <h3 className="text-xl font-semibold mb-4 font-inter-tight">{feature.title}</h3>
               )}

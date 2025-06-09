@@ -77,7 +77,7 @@ const Navbar = () => {
   return (
     <div className="fixed w-full left-0 top-0 px-5 bedar-sc1:px-10 py-4 z-50">
       <div className="flex items-center justify-between">
-        <Link to="/" className="text-xl bedar-sc2:text-2xl font-['Libre_Baskerville'] font-regular py-3 bedar-sc2:py-4 bedar-sc1:py-5 select-none whitespace-nowrap pl-8 hover:opacity-80 transition-opacity">
+        <Link to="/" className="text-xl bedar-sc2:text-2xl font-['Libre_Baskerville'] font-regular py-3 bedar-sc2:py-4 bedar-sc1:py-5 select-none whitespace-nowrap pl-0 bedar-sc2:pl-8 hover:opacity-80 transition-opacity">
           {imgLogo ? <img src={imgLogo} alt="Logo" className="h-8 w-auto" /> : textLogo}
         </Link>
 
