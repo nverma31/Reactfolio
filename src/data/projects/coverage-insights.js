@@ -47,8 +47,7 @@ const coverageInsights = {
       {
         id: "Vision",
         type: "introduction",
-        title: "Vision",
-        content: "We aimed to transform the apps into trusted advisory platforms, significantly increasing the cross-sell rate of additional products and deepening customer loyalty by demonstrating tangible, personalized value."
+        title: "Vision"
       },
       {
         id: "vision-callout",
@@ -150,7 +149,7 @@ const coverageInsights = {
         features: [
           {
             title: "A/B Testing Many Improvements",
-            description: " We introduced insurance suggestions can vary depending on where you are in life to make it more personal. We started with four key life stages for our core user demographics - Independent, Young family, Next chapter, and Growing family.",
+            description: "We conducted A/B tests to improve the coverage insights. We tested different designs, layouts and copy to see which one performs better.",
             images: [
               {
                 src: "/images/projects/coverage-insights/abtest.png",
